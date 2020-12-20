@@ -5,7 +5,6 @@ import AuxReact from './Hoc/AuxReact';
 
 const Layout = (props) => (
     <AuxReact>
-<div>Toolbar , SideBar ,Drowbar</div>
 <Main>
     {props.children}
 </Main>
