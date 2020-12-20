@@ -1,14 +1,14 @@
 import React  from 'react'; 
 import Layout from './components/Layout';
 import PizzaBuilder from './components/Container/PizzaBuilder';
-import Pizza from './components/Pizza/Pizza';
+import Index from './components/Pizza/Index';
 import styled from 'styled-components';
 
 function App()  { 
    return(
      <Container> 
    <Layout> 
-    <Pizza/>
+    <Index/>
     <PizzaBuilder/>
     </Layout>
 
@@ -24,4 +24,4 @@ export default App;
 
 const Container = styled.div`
 background: #F0E68C;
-`
+`;
