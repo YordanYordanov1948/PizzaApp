@@ -26,7 +26,14 @@ const Pica = (props) => {
       <Muschrooms1/>
       <Muschrooms2/>
       <Muschrooms3/>
-    </Cheese>
+      <Corn/>
+      <Corn1/>
+      <Corn2/>
+      <Corn3/>
+      <Pickled/>
+      <Pickled1/>
+      <Pickled2/>
+     </Cheese>
    </Crust>
 
  </Pizza>
@@ -273,4 +280,81 @@ background: #d6d6d6;
 left: 12%;
 top: 50%;
 transform: rotateZ(330deg);
+`;
+
+const Corn = styled.div`
+position: absolute;
+width: 5%;
+height: 5%;
+border-radius: 10px;
+background: #FFD700;
+left: 50%;
+top: 55%;
+transform: rotateZ(330deg);
+`;
+
+
+const Corn1 = styled.div`
+position: absolute;
+width: 5%;
+height: 5%;
+border-radius: 10px;
+background: #FFD700;
+left: 40%;
+top: 10%;
+transform: rotateZ(330deg);
+`;
+
+const Corn2 = styled.div`
+position: absolute;
+width: 5%;
+height: 5%;
+border-radius: 10px;
+background: #FFD700;
+left: 40%;
+top: 20%;
+transform: rotateZ(330deg);
+`;
+
+const Corn3 = styled.div`
+position: absolute;
+width: 5%;
+height: 5%;
+border-radius: 10px;
+background: #FFD700;
+left: 40%;
+top: 50%;
+`;
+
+const Pickled = styled.div`
+background: #006400;
+border-radius: 40px;
+position: absolute;
+width: 10%;
+height: 5%;
+left: 60%;
+top: 70%;
+`;
+
+
+const Pickled1 = styled.div`
+background: #006400;
+border-radius: 40px;
+position: absolute;
+width: 10%;
+height: 5%;
+left: 10%;
+top: 70%;
+transform: rotateZ(330deg);
+`;
+
+const Pickled2 = styled.div`
+background: #006400;
+border-radius: 40px;
+position: absolute;
+width: 10%;
+height: 5%;
+left: 40%;
+top: 70%;
+transform: rotateZ(300deg);
 `;
