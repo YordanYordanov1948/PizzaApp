@@ -1,17 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
+function shoot() {
+  alert("You made a order! See you soon! Thanks <3 ");
+}
+
 
 const BuildControl = (props) => (
 <BuildC>
-    <Button> 
-    Order a  Pizza
+    <Button onClick={shoot}> 
+    Order a  Pizza! Click!
     </Button>
   
      <Text>
       The best Italian Pizza 
       <br/>
-      i have ever eaten
+      I have ever eaten
       <br/>
       Order for only 20$
     </Text>
