@@ -9,7 +9,7 @@ function shoot() {
 const BuildControl = (props) => (
 <BuildC>
     <Button onClick={shoot}> 
-    Order a  Pizza! Click!
+    Order an  Pizza! Click!
     </Button>
   
      <Text>
@@ -45,10 +45,9 @@ padding: 15px 32px;
 cursor:pointer;
 
 &:hover {
-    opacity: 0.7;
-
-  }
-`;
+  opacity: 0.6;
+  color: #ffff00;
+}`;
 
 
 const Text = styled.div`
@@ -58,3 +57,7 @@ font-family: Brush Script MT, Brush Script Std, cursive;
 color: black;
 text-align:center;
 `;
+
+
+
+
