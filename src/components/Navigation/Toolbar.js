@@ -36,11 +36,14 @@ const Toolbar = styled.div`
 background-color: #333;
 position: fixed; 
 top: 0;
-width: 100%;
+left:0;
+right:0;
+padding-bottom: 10px;
 font-family:"Dosis", sans-serif; 
 `;
 
 const Li = styled.div`
+cursor:pointer;
 display:flex;
 justify-content: center;
 text-decoration:none;

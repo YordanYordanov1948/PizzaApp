@@ -38,6 +38,7 @@ margin: 0 auto;
 display: block
 cursor: pointer;
 padding: 15px 32px;
+cursor:pointer;
 
 &:hover {
     opacity: 0.7;
