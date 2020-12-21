@@ -23,5 +23,5 @@ function App()  {
 export default App;
 
 const Container = styled.div`
-background: #F0E68C;
+background-color: #F0E68C;
 `;

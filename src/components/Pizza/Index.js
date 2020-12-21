@@ -358,3 +358,4 @@ left: 40%;
 top: 70%;
 transform: rotateZ(300deg);
 `;
+
