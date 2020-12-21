@@ -24,8 +24,4 @@ export default App;
 
 const Container = styled.div`
 background-color: #F0E68C;
-left:0;
-right:0;
-top: 0;
-width: 100%;
 `;
