@@ -33,6 +33,8 @@ const Pica = (props) => {
       <Pickled/>
       <Pickled1/>
       <Pickled2/>
+      <Tomatoes/>
+      <Tomatoes1/>
      </Cheese>
    </Crust>
 
@@ -359,3 +361,25 @@ top: 70%;
 transform: rotateZ(300deg);
 `;
 
+const Tomatoes = styled.div`
+background: #8B0000;
+border-radius: 50px;
+position: absolute;
+width: 10%;
+height: 5%;
+left: 40%;
+top: 70%;
+transform: rotateZ(300deg);
+`;
+
+
+const Tomatoes1 = styled.div`
+background: #8B0000;
+border-radius: 90px;
+position: absolute;
+width: 10%;
+height: 5%;
+left: 89%;
+top: 50%;
+transform: rotateZ(300deg);
+`;

@@ -7,7 +7,14 @@ const BuildControl = (props) => (
     <Button> 
     Order a  Pizza
     </Button>
-
+  
+     <Text>
+      The best Italian Pizza 
+      <br/>
+      i have ever eaten
+      <br/>
+      Order for only 20$
+    </Text>
 </BuildC>
 
 )
@@ -17,12 +24,11 @@ export default BuildControl;
 const BuildC = styled.div`
 display: flex;
 flex-direction: column;
-flex: 1 0 auto; 
-padding: 20px;
+padding-top: 20px;
 flex-shrink: 0;
-padding: 20px;
 background: #FFD700;
 color: white;
+height: 40vh;
 `;
 
 
@@ -39,3 +45,11 @@ padding: 15px 32px;
   }
 `;
 
+
+const Text = styled.div`
+font-size: 35px;
+padding-top: 20px;
+font-family: Brush Script MT, Brush Script Std, cursive;
+color: black;
+text-align:center;
+`;
