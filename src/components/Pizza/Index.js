@@ -1,12 +1,21 @@
-import React from 'react';
 import styled from 'styled-components';
+import React, { useState } from 'react';
 
 const Pica = (props) => {
-    return( 
+
+const [Peperoni, setPeperoni] = useState(0);
+  
+  return( 
+  <>
+   <Container> 
+<H1>FG</H1>
+   <Button onClick={() => setPeperoni(Peperoni + 1)}>
+     </Button>
+
+  </Container>
  <Pizza>
    <Crust> 
     <Cheese>
-      <Peperoni/>
       <Peperoni1/>
       <Peperoni2/>
       <Peperoni3/>
@@ -37,12 +46,27 @@ const Pica = (props) => {
       <Tomatoes1/>
      </Cheese>
    </Crust>
-
  </Pizza>
-    )
+
+</>
+
+  )
 };
 
+
 export default Pica ;
+
+const H1 = styled.div`
+
+`
+
+const Container = styled.div`
+
+`;
+
+const Button = styled.div`
+
+`
 
 const Pizza = styled.div`
 width: 100vh;
@@ -381,5 +405,6 @@ width: 10%;
 height: 5%;
 left: 89%;
 top: 50%;
-transform: rotateZ(300deg);
+transform: rotateZ(300deg)
 `;
+

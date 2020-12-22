@@ -39,7 +39,7 @@ height: 40vh;
 const Button = styled.div`
 background-color: #0080ff;
 margin: 0 auto;
-display: block
+display: block;
 cursor: pointer;
 padding: 15px 32px;
 cursor:pointer;
