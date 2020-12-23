@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import React , { useState } from 'react';
-import { Peperoni1 } from '../Pizza/Index';
+
 
 function shoot() {
-  alert("You made a order! See you soon! Thanks <3 ");
+  alert("You have successfully declined your order :(");
 
 }
 
