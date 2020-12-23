@@ -82,15 +82,6 @@ border-radius: inherit;
 background: #fff100;
 `;
 
-const Peperoni = styled.div`
-width: 75px;
-margin-left: 200px;
-top: 35%;
-transform: rotateZ(15deg);
-height: 75px;
-background: firebrick;
-border-radius: 37.5px;
-`;
 
 const Peperoni1 = styled.div`
 width: 75px;
