@@ -25,19 +25,27 @@ const [modalIsOpen , setModalIsOpen] = useState(false)
     </Anchor>
 
   <Button onClick = {() => setModalIsOpen(!modalIsOpen)}>
-    Open
-    <Modal isOpen = {modalIsOpen}>
+    Contact us
+  </Button>
+
+  <Modal isOpen = {modalIsOpen}>
       <Button2  onClick = {() => setModalIsOpen(false)} >Close Me</Button2>
-      <Name>
-        Name:
-      <input type="text" name="name" />
-      </Name>
+      <Text>What's on your mind?
+        <br/>
+        You didn't like our pizza, huh? :( 
+        </Text>
+     
+      <input type="name" placeholder="Enter Name" />
       <br/>
-      Telephone:
-      <input type="text" name="name" />
+      <input type="email" placeholder="Enter email" />
+      <br/>
+      <input type="telephone" placeholder="Enter telephone number" />
+
+      <Button3 onClick = {() => setModalIsOpen(false)}
+       type="submit" class="signupbtn">Send</Button3>
 
       </Modal>
-  </Button>
+
 
 </Li>
 </Menu>
@@ -75,7 +83,6 @@ padding:1rem;
     opacity: 0.7;
 
   }
-
   `;
 
 const Modal = styled.div`
@@ -113,15 +120,39 @@ z-index: 1;
 top: 10px;
 right: 20px;
 border: 0;
-background: 
-black;color: white;
+background: #000000;
+color: #fff;
 padding: 5px 10px;
 font-size: 1.3rem;
+
+&:hover {
+  opacity: 0.7;
+
+}
 `;
 
-const Name = styled.div`
+const Text = styled.div`
 margin: 0 0 20px 0;
-color: red;
+font-size: 15px;
+text-align: center;
+ color: #55311c;
 `;
 
-const Input = styled.div``
+
+
+const Button3 = styled.div`
+border: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: lightgreen;
+color: #fff;
+padding: 10px 20px;
+border-radius: 10px;
+font-size: 21px;
+
+&:hover {
+  opacity: 0.7;
+
+}`;
