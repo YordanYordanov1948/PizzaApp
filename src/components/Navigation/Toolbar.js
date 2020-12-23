@@ -1,9 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
+import styled  from 'styled-components';
+import React , { useState } from 'react';
 
-const toolbar = (props) => {
-    return (
-<Toolbar>
+const  Toolbar = () => {
+
+const [modalIsOpen , setModalIsOpen] = useState(false)
+
+ return (
+<Menu>
 <Li>
     <Anchor>
       Home
@@ -21,18 +24,30 @@ const toolbar = (props) => {
      Menu
     </Anchor>
 
-    <Anchor>
-     Contact us
-    </Anchor> 
+  <Button onClick = {() => setModalIsOpen(!modalIsOpen)}>
+    Open
+    <Modal isOpen = {modalIsOpen}>
+      <Button2  onClick = {() => setModalIsOpen(false)} >Close Me</Button2>
+      <Name>
+        Name:
+      <input type="text" name="name" />
+      </Name>
+      <br/>
+      Telephone:
+      <input type="text" name="name" />
+
+      </Modal>
+  </Button>
+
 </Li>
-</Toolbar>
+</Menu>
     );
 }
 
-export default toolbar;
+export default Toolbar;
 
 
-const Toolbar = styled.div`
+const Menu = styled.div`
 background-color: #333;
 position: fixed; 
 top: 0;
@@ -60,6 +75,53 @@ padding:1rem;
     opacity: 0.7;
 
   }
+
   `;
 
+const Modal = styled.div`
+display: ${(props) => (props.isOpen ? 'block' : 'none')};
+width: 600px;
+max-width: 100%;
+height: 400px;
+max-height: 100%;
+position: fixed;
+z-index: 100;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+background-color: #fff
 
+`;
+
+
+const Button = styled.div`
+display:flex;
+text-decoration:none;
+color:#FFFF00;
+padding: 1rem;
+
+&:hover {
+    opacity: 0.7;
+
+  }
+`;
+
+
+const Button2 = styled.div`
+position: absolute;
+z-index: 1;
+top: 10px;
+right: 20px;
+border: 0;
+background: 
+black;color: white;
+padding: 5px 10px;
+font-size: 1.3rem;
+`;
+
+const Name = styled.div`
+margin: 0 0 20px 0;
+color: red;
+`;
+
+const Input = styled.div``

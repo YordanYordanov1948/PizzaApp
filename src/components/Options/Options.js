@@ -1,29 +1,45 @@
 import styled from 'styled-components';
-import React, { useState } from 'react';
-import {Peperoni1} from '../Pizza/Index';
+import React , { useState } from 'react';
+import { Peperoni1 } from '../Pizza/Index';
 
 function shoot() {
   alert("You made a order! See you soon! Thanks <3 ");
+
 }
 
-const Option = (props) => {
+const Option = () => {
 
-  const [{Peperoni1}, Delete] = useState(0);
+  const [Peperoni1,SetCount] = useState (0)
+  const [number , DeleteCount] = useState(0)
+ 
+
+  function AddCount() {
+    SetCount(Peperoni1 + 1)
+  }
+ 
+
+  function Delete () {
+    DeleteCount(prevCount => prevCount - 1)
+    
+  }
+
 
     return (
 <Container>
-<ButtonP onClick = {() => Delete(Peperoni1)}>
-  Add Peperoni 
+<ButtonP onClick = {AddCount}>
+  Add Peperoni +
+  <span>{Peperoni1}</span>
 </ButtonP>
 
 
-<ButtonP2>
- Delete Peperoni
+<ButtonP2 onClick = {Delete}>
+ Delete Peperoni 
+ <span>{number}</span>
 </ButtonP2>
 
 
 <ButtonO>
-Add Orenado
+Add Orenado 
 </ButtonO>
 
 <ButtonO2>
@@ -82,6 +98,7 @@ Add Muschrooms
 }
 
 export default Option;
+
 
 
 const Container = styled.div`
