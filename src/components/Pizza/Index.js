@@ -9,17 +9,15 @@ const Pica = (props) => {
    <Crust> 
     <Cheese>
       {props.peperoniCount >= 1 && <Peperoni1/>}
-      <Peperoni2/> 
-      <Peperoni2/> 
-      <Peperoni3/>
-      <Peperoni4/>
-      <Peperoni5/>  
-      <Orenado/>
-      <Orenado1/>
-      <Orenado2/>
-      <Orenado3/>
-      <Orenado4/>
-      <Orenado5/>
+      {props.peperoniCount >= 2 && <Peperoni2/>}
+      {props.peperoniCount >= 3 && <Peperoni3/>}
+      {props.peperoniCount >= 4 && <Peperoni4/>}
+      {props.peperoniCount >= 5 && <Peperoni5/>}
+      {props.Orenado >= 1 && <Orenado/>}
+      {props.Orenado >= 2 && <Orenado1/>}
+      {props.Orenado >= 3 && <Orenado2/>}
+      {props.Orenado >= 4 && <Orenado3/>}
+      {props.Orenado >= 5 && <Orenado4/>}
       <Olive/>
       <Olive1/>
       <Olive2/>
@@ -125,7 +123,7 @@ border-radius: 37.5px
 const Orenado = styled.div`
 background: linear-gradient(green,#00d200);
 position: absolute;
-margin-left: 100px;
+margin-left: 200px;
 width: 8%;
 height: 2%;
 border-radius: 10px;
@@ -174,17 +172,6 @@ height: 2%;
 border-radius: 10px;
 left: 45%;
 top: 50%;
-transform: rotateZ(30deg);
-`;
-
-const Orenado5 = styled.div`
-background: linear-gradient(green,#00d200);
-position: absolute;
-width: 8%;
-height: 2%;
-border-radius: 10px;
-left: 25%;
-top: 30%;
 transform: rotateZ(30deg);
 `;
 

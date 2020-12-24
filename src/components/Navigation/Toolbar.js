@@ -56,10 +56,10 @@ export default Toolbar;
 const Menu = styled.div`
 background-color: #333;
 position: fixed; 
-top: 0;
+top:0;
 left:0;
 right:0;
-padding-bottom: 10px;
+padding: 1px;  
 font-family:"Dosis", sans-serif; 
 `;
 

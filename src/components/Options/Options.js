@@ -22,7 +22,7 @@ Delete Peperoni
 </ButtonP2>
 
 
-<ButtonO>
+<ButtonO onClick={() => props.incrementOrenadoCount()}>
 Add Orenado 
 </ButtonO>
 
