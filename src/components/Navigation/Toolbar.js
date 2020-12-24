@@ -24,11 +24,11 @@ const [modalIsOpen , setModalIsOpen] = useState(false)
      Menu
     </Anchor>
 
-  <Button onClick = {() => setModalIsOpen(!modalIsOpen)}>
+  <Button onClick= {() => setModalIsOpen(!modalIsOpen)}>
     Contact us
   </Button>
 
-  <Modal isOpen = {modalIsOpen}>
+  <Modal isOpen= {modalIsOpen}>
       <Button2  onClick = {() => setModalIsOpen(false)} >Close Me</Button2>
       <Text>What's on your mind?
         <br/>
@@ -45,8 +45,6 @@ const [modalIsOpen , setModalIsOpen] = useState(false)
        type="submit" class="signupbtn">Send</Button3>
 
       </Modal>
-
-
 </Li>
 </Menu>
     );

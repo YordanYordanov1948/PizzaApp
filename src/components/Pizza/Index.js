@@ -1,23 +1,19 @@
 import styled from 'styled-components';
-import React , { useState } from 'react';
+import React  from 'react';
 
 
 const Pica = (props) => {
-  
-const [peperoniCount , setPeperoniCount] = useState(0)
 
   return( 
  <Pizza>
    <Crust> 
     <Cheese>
-      <button onClick={() => setPeperoniCount((peperoni) => peperoni + 1)}>
-     dadada
-      </button>
-      {peperoniCount >= 1 && <Peperoni1/>}
-      {peperoniCount >= 2 && <Peperoni2/>}
-      {peperoniCount >= 3 && <Peperoni3/>}
-      {peperoniCount >= 4 && <Peperoni4/>}
-      {peperoniCount >= 5 && <Peperoni5/>}
+      {props.peperoniCount >= 1 && <Peperoni1/>}
+      <Peperoni2/> 
+      <Peperoni2/> 
+      <Peperoni3/>
+      <Peperoni4/>
+      <Peperoni5/>  
       <Orenado/>
       <Orenado1/>
       <Orenado2/>

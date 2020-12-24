@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import React , { useState } from 'react';
+import React  from 'react';
+
 
 
 function shoot() {
@@ -7,34 +8,17 @@ function shoot() {
 
 }
 
-const Option = () => {
-
-  const [Peperoni1,SetCount] = useState (0)
-  const [number , DeleteCount] = useState(0)
- 
-
-  function AddCount() {
-    SetCount(Peperoni1 + 1)
-  }
- 
-
-  function Delete () {
-    DeleteCount(prevCount => prevCount - 1)
-    
-  }
-
+const Option = (props) => {
 
     return (
 <Container>
-<ButtonP onClick = {AddCount}>
-  Add Peperoni +
-  <span>{Peperoni1}</span>
+<ButtonP onClick={() => props.incrementPeperoniCount()}>
+  Peperoni
 </ButtonP>
 
 
-<ButtonP2 onClick = {Delete}>
- Delete Peperoni 
- <span>{number}</span>
+<ButtonP2>
+Delete Peperoni
 </ButtonP2>
 
 
