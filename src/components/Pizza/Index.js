@@ -18,23 +18,21 @@ const Pica = (props) => {
       {props.Orenado >= 3 && <Orenado2/>}
       {props.Orenado >= 4 && <Orenado3/>}
       {props.Orenado >= 5 && <Orenado4/>}
-      <Olive/>
-      <Olive1/>
-      <Olive2/>
-      <Olive3/>
-      <Muschrooms/>
-      <Muschrooms1/>
-      <Muschrooms2/>
-      <Muschrooms3/>
-      <Corn/>
-      <Corn1/>
-      <Corn2/>
-      <Corn3/>
-      <Pickled/>
-      <Pickled1/>
-      <Pickled2/>
-      <Tomatoes/>
-      <Tomatoes1/>
+      {props.Olive >= 1 && <Olive/>}
+      {props.Olive >= 2 && <Olive1/>}
+      {props.Olive >= 3 && <Olive2/>}
+      {props.Olive >= 4 && <Olive2/>}
+      {props.Muschrooms >= 1 && <Muschrooms/>}
+      {props.Muschrooms >= 2 && <Muschrooms1/>}
+      {props.Muschrooms >= 3 && <Muschrooms2/>}
+      {props.Muschrooms >= 4 && <Muschrooms3/>}
+      {props.Corn >= 1 && <Corn/>}
+      {props.Corn >= 2 && <Corn1/>}
+      {props.Corn >= 3 && <Corn2/>}
+      {props.Corn >= 4 && <Corn3/>}
+      {props.Pickled >= 1 && <Pickled1/>}
+      {props.Tomatoes >= 1 && <Tomatoes/>}
+      {props.Tomatoes >= 2 && <Tomatoes1/>}
      </Cheese>
    </Crust>
  </Pizza>
@@ -209,16 +207,6 @@ top: 30%;
 transform: rotateZ(260deg)
 `;
 
-const Olive3 = styled.div`
-width: 2%;
-height: 3%;
-border: 18px solid black;
-border-radius: 50px;
-position: absolute;
-left: 70%;
-top: 50%;
-transform: rotateZ(160deg);
-`;
 
 const Muschrooms = styled.div`
 position: absolute;
@@ -309,15 +297,6 @@ left: 40%;
 top: 50%;
 `;
 
-const Pickled = styled.div`
-background: #006400;
-border-radius: 40px;
-position: absolute;
-width: 10%;
-height: 5%;
-left: 60%;
-top: 70%;
-`;
 
 
 const Pickled1 = styled.div`
@@ -331,16 +310,6 @@ top: 70%;
 transform: rotateZ(330deg);
 `;
 
-const Pickled2 = styled.div`
-background: #006400;
-border-radius: 40px;
-position: absolute;
-width: 10%;
-height: 5%;
-left: 40%;
-top: 70%;
-transform: rotateZ(300deg);
-`;
 
 const Tomatoes = styled.div`
 background: #8B0000;

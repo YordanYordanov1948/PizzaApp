@@ -12,65 +12,45 @@ const Option = (props) => {
 
     return (
 <Container>
+
+
 <ButtonP onClick={() => props.incrementPeperoniCount()}>
-  Peperoni
+  Add Peperoni
 </ButtonP>
 
-
-<ButtonP2>
-Delete Peperoni
-</ButtonP2>
 
 
 <ButtonO onClick={() => props.incrementOrenadoCount()}>
 Add Orenado 
 </ButtonO>
 
-<ButtonO2>
-Delete Orenado
-</ButtonO2>
 
-
-<ButtonOl>
+<ButtonOl onClick={() => props.incrementOliveCount()}>
 Add Olive
 </ButtonOl>
 
-<ButtonOl1>
-Delete Olive
-</ButtonOl1>
 
-<BMu>
+<BMu onClick={() => props.incrementMuschroomsCount()}>
 Add Muschrooms 
 </BMu>
 
 
-<BmuD>
-    Delete Muschrooms
-</BmuD>
 
-<Corn>
+<Corn onClick={() => props.incrementCornCount()}>
     Add Corn
 </Corn>
 
-<CornD>
-    Delete Corn
-</CornD>
 
-<Pickled>
+
+<Pickled onClick={() => props.incrementPickledCount()}>
   Add Pickled
 </Pickled>
 
-<PickledD>
-  Delete Pickled
-</PickledD>
 
-<Tomatoes>
+<Tomatoes onClick={() => props.incrementTomatoesCount()}>
   Add Tomatoes
 </Tomatoes>
 
-<TomatoesD>
-  Delete Tomatoes
-</TomatoesD>
 
 
 <Cancel onClick={shoot}>
@@ -83,10 +63,8 @@ Add Muschrooms
 
 export default Option;
 
-
-
 const Container = styled.div`
-height: 450px;
+height: 240px;
 position: relative;
 border: 3px solid #ffff00; 
 margin: 0;
@@ -96,27 +74,19 @@ top: 50%;
 transform: translateY(-50%);
 `;
 
+
 const ButtonP = styled.div`
-color: #fff;
-background-color: #e60000;
+color: #000;
+background-color: #F8F8FF;
 cursor: pointer;
 padding: 6px 22px;
 
 &:hover {
   opacity: 0.6;
-}`
-;
-
-const ButtonP2 = styled.div`
-background-color: #0080ff;
-cursor: pointer;
-padding: 6px 22px;
+}
+`;
 
 
-&:hover {
-  opacity: 0.6;
-}`
-;
 
 
 const ButtonO = styled.div`
@@ -130,23 +100,9 @@ padding: 6px 22px;
   }`
   ;
 
-
-const ButtonO2 = styled.div`
-color: #000000;
-background-color: #12980e;
-cursor: pointer;
-padding: 6px 22px;
-
-
-&:hover {
-    opacity: 0.6;
-  }`
-  ;
-
-
 const ButtonOl = styled.div`
-color: white;
-background-color: #DC143C;
+color: #000;
+background-color: #F0FFF0;
 cursor: pointer;
 padding: 6px 22px;
 
@@ -156,21 +112,10 @@ padding: 6px 22px;
   }`
   ;
 
-const ButtonOl1 = styled.div`
-color: #fff;
-background-color: #000000;
-cursor: pointer;
-padding: 6px 22px;
-
-&:hover {
-    opacity: 0.6;
-
-  }`
-;
 
 const BMu = styled.div`
 color: #fff;
-background-color: #808080;
+background-color: #D3D3D3;
 cursor: pointer;
 padding: 6px 22px;
 
@@ -180,22 +125,10 @@ padding: 6px 22px;
   }`;
 
 
-const BmuD = styled.div`
-padding: 6px 22px;
-background-color: #F0FFF0;
-color: #F08080;
-cursor: pointer;
-
-&:hover {
-  opacity: 0.6;
-
-}
-
-`;
 
 const Corn = styled.div`
 padding: 6px 22px;
-background-color: #87CEFA;
+background-color: #FFEFD5;
 cursor: pointer;
 color: #800000;
 
@@ -206,21 +139,10 @@ color: #800000;
 
 `;
 
-const CornD = styled.div`
-padding: 6px 22px;
-background-color: #808000;
-cursor: pointer;
-color: #FFDAB9;
-
-&:hover {
-  opacity: 0.6;
-
-}
-`;
 
 const Pickled = styled.div`
 padding: 6px 22px;
-background-color: #2E8B57;
+background-color: #20B2AA;
 cursor: pointer;
 color: #FFDAB9;
 
@@ -230,21 +152,11 @@ color: #FFDAB9;
 }
 `;
 
-const PickledD = styled.div`
-padding: 6px 22px;
-background-color: #FFFAFA;
-cursor: pointer;
-color: #FF6347;
 
-&:hover {
-  opacity: 0.6;
-
-}
-`;
 
 const Tomatoes = styled.div`
 padding: 6px 22px;
-background-color: #FF6347;
+background-color: #B0E0E6;
 cursor: pointer;
 color: #fff;
 
@@ -254,21 +166,11 @@ color: #fff;
 }
 `;
 
-const TomatoesD = styled.div`
-padding: 6px 22px;
-background-color: #00FF7F;
-cursor: pointer;
-color: #fff;
 
-&:hover {
-  opacity: 0.6;
-
-}
-`;
 
 const Cancel = styled.div`
 padding: 6px 22px;
-background-color: #663399;
+background-color: #B0E0E6;
 cursor: pointer;
 color: #fff;
 
