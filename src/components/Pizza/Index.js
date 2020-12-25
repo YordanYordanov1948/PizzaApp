@@ -13,7 +13,6 @@ const Pica = (props) => {
       {props.peperoniCount >= 3 && <Peperoni3/>}
       {props.peperoniCount >= 4 && <Peperoni4/>}
       {props.peperoniCount >= 5 && <Peperoni5/>}
-      {props.Orenado >= 1 && <Orenado/>}
       {props.Orenado >= 2 && <Orenado1/>}
       {props.Orenado >= 3 && <Orenado2/>}
       {props.Orenado >= 4 && <Orenado3/>}
@@ -47,9 +46,16 @@ const Pizza = styled.div`
 width: 100vh;
 height: 100vh;
 margin: auto;
-padding: 5px;
+padding: 45px;
 box-sizing: border-box;
+
+  @media (max-width: 600px) {
+    width: 40vh;
+    height 40vh;
+  }
 `;
+
+
 
 const Crust = styled.div` 
 margin: auto;
@@ -66,6 +72,8 @@ display: flex;
 `;
 
 
+
+
 const Cheese = styled.div`
 height: 95%;
 width: 95%;
@@ -77,11 +85,11 @@ background: #fff100;
 
 const Peperoni1 = styled.div`
 width: 75px;
-margin-left: 300px;
-height: 75px;
+margin-left: 200px;
 height: 75px;
 background: firebrick;
 border-radius: 37.5px
+
 `;
 
 const Peperoni2 = styled.div`
@@ -103,7 +111,7 @@ border-radius: 37.5px
 
 const Peperoni4 = styled.div`
 width: 75px;
-margin-left: 360px;
+margin-left: 260px;
 height: 75px;
 background: firebrick;
 border-radius: 37.5px
@@ -111,21 +119,12 @@ border-radius: 37.5px
 
 const Peperoni5 = styled.div`
 width: 75px;
-margin-left: 160px;
+margin-left: 130px;
 height: 75px;
 background: firebrick;
 border-radius: 37.5px
 `;
 
-
-const Orenado = styled.div`
-background: linear-gradient(green,#00d200);
-position: absolute;
-margin-left: 200px;
-width: 8%;
-height: 2%;
-border-radius: 10px;
-`;
 
 const Orenado1 = styled.div`
 background: linear-gradient(green,#00d200);

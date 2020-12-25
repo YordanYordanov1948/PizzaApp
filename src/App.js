@@ -31,9 +31,7 @@ function App()  {
           incrementCornCount={() => setCornCount((Corn) => Corn + 1)}
           incrementPickledCount={() => setPickledCount((Pickled) => Pickled + 1)}
           incrementTomatoesCount={() => setTomatoesCount((Tomatoes) => Tomatoes + 1)}
-
           />
-
          <Toolbar/>
       <BuildControl/>
      </Container>
@@ -46,4 +44,5 @@ export default App;
 
 const Container = styled.div`
 background-color: #F0E68C;
+
 `;

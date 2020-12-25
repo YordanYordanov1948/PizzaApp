@@ -19,6 +19,8 @@ const BuildControl = (props) => (
       <br/>
       Order for only 20$
     </Text>
+
+
 </BuildC>
 
 )
@@ -44,9 +46,11 @@ cursor: pointer;
 padding: 15px 32px;
 cursor:pointer;
 
+
 &:hover {
   opacity: 0.6;
   color: #ffff00;
+
 }`;
 
 
