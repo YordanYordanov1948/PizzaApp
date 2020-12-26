@@ -31,10 +31,16 @@ const BuildC = styled.div`
 display: flex;
 flex-direction: column;
 padding-top: 20px;
-flex-shrink: 0;
 background: #FFD700;
-color: white;
-height: 40vh;
+color: #fff;
+
+@media (max-width: 600px) {
+  color: #fff;
+  background: #FFD700;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+}
 `;
 
 

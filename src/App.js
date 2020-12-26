@@ -43,6 +43,5 @@ function App()  {
 export default App;
 
 const Container = styled.div`
-background-color: #F0E68C;
-
+background: #F0E68C;
 `;

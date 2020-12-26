@@ -46,7 +46,7 @@ const Pizza = styled.div`
 width: 100vh;
 height: 100vh;
 margin: auto;
-padding: 45px;
+padding: 65px;
 box-sizing: border-box;
 
   @media (max-width: 600px) {
