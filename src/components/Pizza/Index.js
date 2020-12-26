@@ -8,30 +8,29 @@ const Pica = (props) => {
  <Pizza>
    <Crust> 
     <Cheese>
-      {props.peperoniCount >= 1 && <Peperoni1/>}
-      {props.peperoniCount >= 2 && <Peperoni2/>}
-      {props.peperoniCount >= 3 && <Peperoni3/>}
-      {props.peperoniCount >= 4 && <Peperoni4/>}
-      {props.peperoniCount >= 5 && <Peperoni5/>}
-      {props.Orenado >= 2 && <Orenado1/>}
-      {props.Orenado >= 3 && <Orenado2/>}
-      {props.Orenado >= 4 && <Orenado3/>}
-      {props.Orenado >= 5 && <Orenado4/>}
-      {props.Olive >= 1 && <Olive/>}
-      {props.Olive >= 2 && <Olive1/>}
-      {props.Olive >= 3 && <Olive2/>}
-      {props.Olive >= 4 && <Olive2/>}
-      {props.Muschrooms >= 1 && <Muschrooms/>}
-      {props.Muschrooms >= 2 && <Muschrooms1/>}
-      {props.Muschrooms >= 3 && <Muschrooms2/>}
-      {props.Muschrooms >= 4 && <Muschrooms3/>}
-      {props.Corn >= 1 && <Corn/>}
-      {props.Corn >= 2 && <Corn1/>}
-      {props.Corn >= 3 && <Corn2/>}
-      {props.Corn >= 4 && <Corn3/>}
-      {props.Pickled >= 1 && <Pickled1/>}
-      {props.Tomatoes >= 1 && <Tomatoes/>}
-      {props.Tomatoes >= 2 && <Tomatoes1/>}
+      {props.peperoniCount >= 1 &&  props.peperoniRemove >= -1 && <Peperoni1/>}
+      {props.peperoniCount >= 2 &&  props.peperoniRemove >= -2 && <Peperoni2/>}
+      {props.peperoniCount >= 3 &&  props.peperoniRemove >= -3 && <Peperoni3/>}
+      {props.peperoniCount >= 4 &&  props.peperoniRemove >= -4 && <Peperoni4/>}
+      {props.peperoniCount >= 5 &&  props.peperoniRemove >= -5 && <Peperoni5/>}
+      {props.Orenado >= 1 && props.OrenadoRemove >= -1 && <Orenado1/>}
+      {props.Orenado >= 2 && props.OrenadoRemove >= -2 && <Orenado2/>}
+      {props.Orenado >= 3 && props.OrenadoRemove >= -3 && <Orenado3/>}
+      {props.Orenado >= 4 && props.OrenadoRemove >= -4 && <Orenado4/>}
+      {props.Olive >= 1 && props.OliveRemove >= -1 && <Olive/>}
+      {props.Olive >= 2 && props.OliveRemove >= -2 && <Olive1/>}
+      {props.Olive >= 3 && props.OliveRemove >= -3 && <Olive2/>}
+      {props.Muschrooms >= 1 && props.MuschroomsDelete >= -1 && <Muschrooms/>}
+      {props.Muschrooms >= 2 && props.MuschroomsDelete >= -2 && <Muschrooms1/>}
+      {props.Muschrooms >= 3 && props.MuschroomsDelete >= -3 && <Muschrooms2/>}
+      {props.Muschrooms >= 4 && props.MuschroomsDelete >= -4 && <Muschrooms3/>}
+      {props.Corn >= 1 && props.CornDelete >= -1 && <Corn/>}
+      {props.Corn >= 2 && props.CornDelete >= -2 && <Corn1/>}
+      {props.Corn >= 3 && props.CornDelete >= -3 && <Corn2/>}
+      {props.Corn >= 4 && props.CornDelete >= -4 && <Corn3/>}
+      {props.Pickled >= 1 && props.PickledDelete >= - 1 && <Pickled1/>}
+      {props.Tomatoes >= 1 && props.TomatoesDelete >= -1 && <Tomatoes/>}
+      {props.Tomatoes >= 2 && props.TomatoesDelete >= - 2 && <Tomatoes1/>}
      </Cheese>
    </Crust>
  </Pizza>

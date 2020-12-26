@@ -1,14 +1,12 @@
-import styled from 'styled-components';
 import React  from 'react';
-
-
+import styled from 'styled-components';
 
 function shoot() {
   alert("You have successfully declined your order :(");
-
 }
 
 const Option = (props) => {
+
 
     return (
 <Container>
@@ -18,40 +16,57 @@ const Option = (props) => {
   Add Peperoni
 </ButtonP>
 
-
+<ButtonD onClick={() => props.RemovePeperoniCount()}> 
+  Delete Peperoni
+</ButtonD>
 
 <ButtonO onClick={() => props.incrementOrenadoCount()}>
 Add Orenado 
 </ButtonO>
 
+<ButtonOD onClick={() => props.RemoveOrenadoCount()}>
+  Remove Orenado
+</ButtonOD>
 
 <ButtonOl onClick={() => props.incrementOliveCount()}>
 Add Olive
 </ButtonOl>
 
+<ButtonOlD onClick={() => props.RemoveOliveCount()}>
+  Remove Olive
+</ButtonOlD>
 
 <BMu onClick={() => props.incrementMuschroomsCount()}>
 Add Muschrooms 
 </BMu>
 
-
+<BMuD onClick={() => props.RemoveMuschroomsCount()}>
+  Remove Muschrooms
+</BMuD>
 
 <Corn onClick={() => props.incrementCornCount()}>
     Add Corn
 </Corn>
 
-
+<CornDelete onClick={() => props.RemoveCornCount()}>
+    Delete Corn
+</CornDelete>
 
 <Pickled onClick={() => props.incrementPickledCount()}>
   Add Pickled
 </Pickled>
 
+<Pickled onClick={() => props.RemovePickledCount()}>
+  Remove Pickled
+</Pickled>
 
 <Tomatoes onClick={() => props.incrementTomatoesCount()}>
   Add Tomatoes
 </Tomatoes>
 
-
+<Tomatoes onClick={() => props.RemoveTomatoesCount()}>
+  Remove Tomatoes
+</Tomatoes>
 
 <Cancel onClick={shoot}>
   Cancel an order! Click!
@@ -64,8 +79,7 @@ Add Muschrooms
 export default Option;
 
 const Container = styled.div`
-height: 240px;
-border: 3px solid #ffff00; 
+height: 440px;
 margin: 0;
 position: absolute;
 top: 50%;
@@ -82,6 +96,29 @@ transform: translateY(-50%);
 `;
 
 const ButtonP = styled.div`
+color: #000;
+background-color: #F8F8FF;
+cursor: pointer;
+padding: 6px 22px;
+
+
+@media (max-width: 600px) {
+color: #000;
+background-color: #F8F8FF;
+cursor: pointer;
+padding: 6px 22px;
+width: 50%;
+}
+
+
+
+&:hover {
+  opacity: 0.6;
+}
+`;
+
+
+const ButtonD = styled.div`
 color: #000;
 background-color: #F8F8FF;
 cursor: pointer;
@@ -125,6 +162,27 @@ width: 50%;
   }`
   ;
 
+const ButtonOD = styled.div`
+background-color: #ffffff;
+cursor: pointer;
+padding: 6px 22px;
+
+
+@media (max-width: 600px) {
+background-color: #ffffff;
+cursor: pointer;
+padding: 6px 22px;
+width: 50%;
+  }
+
+
+&:hover {
+    opacity: 0.6;
+  }
+`;
+
+
+
 
 const ButtonOl = styled.div`
 color: #000;
@@ -148,6 +206,32 @@ width: 50%;
 
   }`
   ;
+
+
+const ButtonOlD = styled.div`
+
+color: #000;
+background-color: #F0FFF0;
+cursor: pointer;
+padding: 6px 22px;
+
+
+@media (max-width: 600px) {
+color: #000;
+background-color: #F0FFF0;
+cursor: pointer;
+padding: 6px 22px;
+width: 50%;
+    }
+  
+
+
+&:hover {
+    opacity: 0.6;
+
+  }`
+  ;
+
 
 
 const BMu = styled.div`
@@ -174,6 +258,28 @@ padding: 6px 22px;
   }`;
 
 
+const BMuD = styled.div`
+color: #fff;
+background-color: #D3D3D3;
+cursor: pointer;
+padding: 6px 22px;
+
+
+
+@media (max-width: 600px) {
+  color: #fff;
+  background-color: #D3D3D3;
+  cursor: pointer;
+  padding: 6px 22px;
+  width: 50%;
+  }
+    
+&:hover {
+    opacity: 0.6;
+
+  }`;
+
+
 
 const Corn = styled.div`
 padding: 6px 22px;
@@ -194,7 +300,28 @@ width: 50%;
   opacity: 0.6;
 
 }
+`;
 
+
+const CornDelete = styled.div`
+padding: 6px 22px;
+background-color: #FFEFD5;
+cursor: pointer;
+color: #800000;
+
+
+@media (max-width: 600px) {
+ padding: 6px 22px;
+background-color: #FFEFD5;
+cursor: pointer;
+color: #800000;
+width: 50%;
+ }
+    
+&:hover {
+  opacity: 0.6;
+
+}
 `;
 
 
