@@ -35,11 +35,11 @@ const [modalIsOpen , setModalIsOpen] = useState(false)
         You didn't like our pizza, huh? :( 
         </Text>
      
-      <input type="name" placeholder="Enter Name" />
+      <input type="text" placeholder="Name" />
       <br/>
-      <input type="email" placeholder="Enter email" />
+      <input type="text" placeholder="Email" />
       <br/>
-      <input type="telephone" placeholder="Enter telephone number" />
+      <input type="text" placeholder="Number" />
 
       <Button3 onClick = {() => setModalIsOpen(false)}
        type="submit" class="signupbtn">Send</Button3>
