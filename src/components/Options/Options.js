@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 function shoot() {
@@ -7,12 +7,11 @@ function shoot() {
 
 const Option = (props) => {
 
-
     return (
 <Container>
 
 
-<ButtonP onClick={() => props.incrementPeperoniCount()}>
+<ButtonP onClick={() => props.incrementPeperoniCount() && props.setIsHide() < 5 }>
   Add Peperoni
 </ButtonP>
 

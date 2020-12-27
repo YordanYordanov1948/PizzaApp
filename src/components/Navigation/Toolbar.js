@@ -8,13 +8,10 @@ const [modalIsOpen , setModalIsOpen] = useState(false)
  return (
 <Menu>
 <Li>
-    <Anchor>
-      Home
-    </Anchor>
-
-    <Anchor>
-      About
-    </Anchor>
+   
+  <Anchor>
+  About 
+  </Anchor>
 
     <Anchor>
       Pricing
@@ -25,11 +22,10 @@ const [modalIsOpen , setModalIsOpen] = useState(false)
     </Anchor>
 
   <Button onClick= {() => setModalIsOpen(!modalIsOpen)}>
-    Contact us
+    Contacts
   </Button>
 
   <Modal isOpen= {modalIsOpen}>
-      <Button2  onClick = {() => setModalIsOpen(false)} >Close Me</Button2>
       <Text>What's on your mind?
         <br/>
         You didn't like our pizza, huh? :( 
@@ -46,12 +42,102 @@ const [modalIsOpen , setModalIsOpen] = useState(false)
 
       </Modal>
 </Li>
+
+<MobileNav>
+ 
+  <AnchorM>
+    About
+  </AnchorM>
+
+  <AnchorM>
+    Pricing
+  </AnchorM>
+
+  <AnchorM>
+    Menu
+  </AnchorM>
+
+  <ButtonM onClick= {() => setModalIsOpen(!modalIsOpen)}>
+  Contacts
+  </ButtonM>
+
+  <Modal isOpen= {modalIsOpen}>
+      <Text>What's on your mind?
+        <br/>
+        You didn't like our pizza, huh? :( 
+        </Text>
+     
+      <input type="text" placeholder="Name" />
+      <br/>
+      <input type="text" placeholder="Email" />
+      <br/>
+      <input type="text" placeholder="Number" />
+
+      <Button3 onClick = {() => setModalIsOpen(false)}
+       type="submit" class="signupbtn">Send</Button3>
+
+      </Modal>
+
+</MobileNav>
+
 </Menu>
     );
 }
 
 export default Toolbar;
 
+
+const MobileNav = styled.div`
+`;
+
+const AnchorM = styled.div`
+
+@media (max-width: 600px) {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  dispay: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  display: none;
+}
+`;
+
+const ButtonM = styled.div`
+@media (max-width: 600px) {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  dispay: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  display: none;
+}
+
+
+`;
 
 const Menu = styled.div`
 background-color: #333;
@@ -69,6 +155,10 @@ display:flex;
 justify-content: center;
 text-decoration:none;
 text-transform:uppercase;
+
+@media (max-width: 600px) {
+  display: none;
+}
 `;
 
 const Anchor = styled.a`
@@ -82,6 +172,7 @@ padding:1rem;
 
   }
   `;
+
 
 const Modal = styled.div`
 display: ${(props) => (props.isOpen ? 'block' : 'none')};
@@ -111,23 +202,6 @@ padding: 1rem;
   }
 `;
 
-
-const Button2 = styled.div`
-position: absolute;
-z-index: 1;
-top: 10px;
-right: 20px;
-border: 0;
-background: #000000;
-color: #fff;
-padding: 5px 10px;
-font-size: 1.3rem;
-
-&:hover {
-  opacity: 0.7;
-
-}
-`;
 
 const Text = styled.div`
 margin: 0 0 20px 0;
