@@ -86,11 +86,7 @@ top: 50%;
 transform: translateY(-50%);
 
 @media (max-width: 600px) {
-  height: 1px;
-  display: block;
-  padding-bottom: 700px;
-  border: none;
-  
+display: none;
 }
 `;
 
@@ -99,17 +95,6 @@ color: #000;
 background-color: #F8F8FF;
 cursor: pointer;
 padding: 6px 22px;
-
-
-@media (max-width: 600px) {
-color: #000;
-background-color: #F8F8FF;
-cursor: pointer;
-padding: 6px 22px;
-width: 50%;
-}
-
-
 
 &:hover {
   opacity: 0.6;
@@ -122,17 +107,6 @@ color: #000;
 background-color: #F8F8FF;
 cursor: pointer;
 padding: 6px 22px;
-
-
-@media (max-width: 600px) {
-color: #000;
-background-color: #F8F8FF;
-cursor: pointer;
-padding: 6px 22px;
-width: 50%;
-}
-
-
 
 &:hover {
   opacity: 0.6;
@@ -147,15 +121,6 @@ background-color: #ffffff;
 cursor: pointer;
 padding: 6px 22px;
 
-
-@media (max-width: 600px) {
-background-color: #ffffff;
-cursor: pointer;
-padding: 6px 22px;
-width: 50%;
-  }
-
-
 &:hover {
     opacity: 0.6;
   }`
@@ -165,14 +130,6 @@ const ButtonOD = styled.div`
 background-color: #ffffff;
 cursor: pointer;
 padding: 6px 22px;
-
-
-@media (max-width: 600px) {
-background-color: #ffffff;
-cursor: pointer;
-padding: 6px 22px;
-width: 50%;
-  }
 
 
 &:hover {
@@ -189,17 +146,6 @@ background-color: #F0FFF0;
 cursor: pointer;
 padding: 6px 22px;
 
-
-@media (max-width: 600px) {
-color: #000;
-background-color: #F0FFF0;
-cursor: pointer;
-padding: 6px 22px;
-width: 50%;
-    }
-  
-
-
 &:hover {
     opacity: 0.6;
 
@@ -213,17 +159,6 @@ color: #000;
 background-color: #F0FFF0;
 cursor: pointer;
 padding: 6px 22px;
-
-
-@media (max-width: 600px) {
-color: #000;
-background-color: #F0FFF0;
-cursor: pointer;
-padding: 6px 22px;
-width: 50%;
-    }
-  
-
 
 &:hover {
     opacity: 0.6;
@@ -240,17 +175,6 @@ cursor: pointer;
 padding: 6px 22px;
 
 
-
-@media (max-width: 600px) {
-  color: #fff;
-  background-color: #D3D3D3;
-  cursor: pointer;
-  padding: 6px 22px;
-  width: 50%;
-      }
-    
-
-
 &:hover {
     opacity: 0.6;
 
@@ -263,15 +187,6 @@ background-color: #D3D3D3;
 cursor: pointer;
 padding: 6px 22px;
 
-
-
-@media (max-width: 600px) {
-  color: #fff;
-  background-color: #D3D3D3;
-  cursor: pointer;
-  padding: 6px 22px;
-  width: 50%;
-  }
     
 &:hover {
     opacity: 0.6;
@@ -286,14 +201,6 @@ background-color: #FFEFD5;
 cursor: pointer;
 color: #800000;
 
-
-@media (max-width: 600px) {
- padding: 6px 22px;
-background-color: #FFEFD5;
-cursor: pointer;
-color: #800000;
-width: 50%;
- }
     
 &:hover {
   opacity: 0.6;
@@ -307,16 +214,7 @@ padding: 6px 22px;
 background-color: #FFEFD5;
 cursor: pointer;
 color: #800000;
-
-
-@media (max-width: 600px) {
- padding: 6px 22px;
-background-color: #FFEFD5;
-cursor: pointer;
-color: #800000;
-width: 50%;
- }
-    
+  
 &:hover {
   opacity: 0.6;
 
@@ -329,17 +227,6 @@ padding: 6px 22px;
 background-color: #20B2AA;
 cursor: pointer;
 color: #FFDAB9;
-
-
-@media (max-width: 600px) {
-  padding: 6px 22px;
-  background-color: #20B2AA;
-  cursor: pointer;
-  color: #FFDAB9;
-  width: 50%;
-  }
-
-
 
 &:hover {
   opacity: 0.6;
@@ -355,15 +242,6 @@ background-color: #B0E0E6;
 cursor: pointer;
 color: #fff;
 
-
-@media (max-width: 600px) {
-  padding: 6px 22px;
-  background-color: #B0E0E6;
-  cursor: pointer;
-  color: #fff;
-  width: 50%;
-  }
-
 &:hover {
   opacity: 0.6;
 
@@ -378,15 +256,6 @@ background-color: #B0E0E6;
 cursor: pointer;
 color: #fff;
 
-
-
-@media (max-width: 600px) {
-  padding: 6px 22px;
-  background-color: #B0E0E6;
-  cursor: pointer;
-  color: #fff;
-  width: 80%;
-  }
 
 &:hover {
   opacity: 0.6;

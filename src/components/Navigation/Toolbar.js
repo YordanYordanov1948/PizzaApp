@@ -101,6 +101,11 @@ const AnchorM = styled.div`
   text-decoration: none;
 }
 
+@media only screen and (min-width: 600px) {
+  display: none;
+}
+
+
 @media only screen and (min-width: 768px) {
   display: none;
 }
@@ -127,6 +132,11 @@ const ButtonM = styled.div`
 @media only screen and (min-width: 768px) {
   display: none;
 }
+
+@media only screen and (min-width: 600px) {
+  display: none;
+}
+
 
 @media only screen and (min-width: 992px) {
   dispay: none;
