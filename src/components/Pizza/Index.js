@@ -53,9 +53,8 @@ box-sizing: border-box;
     height 50vh;
     margin: 50px;
   }
+
 `;
-
-
 
 const Crust = styled.div` 
 margin: auto;

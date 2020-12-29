@@ -40,6 +40,18 @@ color: #fff;
   width: 100vw;
   position: fixed;
   bottom: 0;
+
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    
+  color: #fff;
+  background: #FFD700;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  }
 }
 `;
 

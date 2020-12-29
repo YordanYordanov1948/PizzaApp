@@ -103,9 +103,22 @@ transform: translateY(-50%);
   justify-content: center;
   padding-bottom: 150px;
   flex-direction: column;
-}
-`;
 
+
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+  display: flex;
+  width: 20%;
+  flex-wrap: wrap;
+  font-size: 12px;
+  justify-content: center;
+  padding-bottom: 150px;
+  flex-direction: column;
+  }
+}`;
 
 
 const ButtonP = styled.div`
@@ -255,7 +268,6 @@ padding: 6px 22px;
 }
 
 
-
 &:hover {
     opacity: 0.6;
 
@@ -316,7 +328,6 @@ color: #FFDAB9;
   padding: 2px;
  
 }
-
 
 
 &:hover {

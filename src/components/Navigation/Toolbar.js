@@ -57,6 +57,10 @@ const [modalIsOpen , setModalIsOpen] = useState(false)
     Menu
   </AnchorM>
 
+  <AnchorM>
+    Contacts
+  </AnchorM>
+
   <ButtonM onClick= {() => setModalIsOpen(!modalIsOpen)}>
   Contacts
   </ButtonM>
@@ -103,7 +107,12 @@ const AnchorM = styled.div`
 }
 
 @media only screen and (min-width: 600px) {
-  display: none;
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 
