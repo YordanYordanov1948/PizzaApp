@@ -7,11 +7,17 @@ function shoot() {
 
 const Option = (props) => {
 
+
+  const handleIncrementPeperoniCount = () => {
+    props.incrementPeperoniCount()
+    props.IsHide()
+  }
+
     return (
+
 <Container>
 
-
-<ButtonP onClick={() => props.incrementPeperoniCount() && props.setIsHide() < 5 }>
+<ButtonP onClick= {handleIncrementPeperoniCount}>
   Add Peperoni
 </ButtonP>
 
@@ -26,6 +32,7 @@ Add Orenado
 <ButtonOD onClick={() => props.RemoveOrenadoCount()}>
   Remove Orenado
 </ButtonOD>
+
 
 <ButtonOl onClick={() => props.incrementOliveCount()}>
 Add Olive
@@ -48,7 +55,7 @@ Add Muschrooms
 </Corn>
 
 <CornDelete onClick={() => props.RemoveCornCount()}>
-    Delete Corn
+    Remove  Corn
 </CornDelete>
 
 <Pickled onClick={() => props.incrementPickledCount()}>
@@ -72,10 +79,13 @@ Add Muschrooms
 </Cancel>
 
 </Container>
+
     );
 }
 
 export default Option;
+
+
 
 const Container = styled.div`
 height: 440px;
@@ -86,15 +96,30 @@ top: 50%;
 transform: translateY(-50%);
 
 @media (max-width: 600px) {
-display: none;
+  display: flex;
+  width: 20%;
+  flex-wrap: wrap;
+  font-size: 13.5px;
+  justify-content: center;
+  padding-bottom: 150px;
+  flex-direction: column;
 }
 `;
+
+
 
 const ButtonP = styled.div`
 color: #000;
 background-color: #F8F8FF;
 cursor: pointer;
 padding: 6px 22px;
+
+
+@media (max-width: 600px) {
+  padding: 2px;
+ 
+}
+
 
 &:hover {
   opacity: 0.6;
@@ -108,18 +133,29 @@ background-color: #F8F8FF;
 cursor: pointer;
 padding: 6px 22px;
 
+
+@media (max-width: 600px) {
+  padding: 2px;
+ 
+}
+
+
 &:hover {
   opacity: 0.6;
 }
 `;
 
-
-
-
 const ButtonO = styled.div`
 background-color: #ffffff;
 cursor: pointer;
 padding: 6px 22px;
+
+
+@media (max-width: 600px) {
+  padding: 2px;
+ 
+}
+
 
 &:hover {
     opacity: 0.6;
@@ -132,12 +168,16 @@ cursor: pointer;
 padding: 6px 22px;
 
 
+@media (max-width: 600px) {
+  padding: 2px;
+ 
+}
+
+
 &:hover {
     opacity: 0.6;
   }
 `;
-
-
 
 
 const ButtonOl = styled.div`
@@ -145,6 +185,13 @@ color: #000;
 background-color: #F0FFF0;
 cursor: pointer;
 padding: 6px 22px;
+
+
+@media (max-width: 600px) {
+  padding: 2px;
+ 
+}
+
 
 &:hover {
     opacity: 0.6;
@@ -160,19 +207,32 @@ background-color: #F0FFF0;
 cursor: pointer;
 padding: 6px 22px;
 
+
+
+@media (max-width: 600px) {
+  padding: 2px;
+ 
+}
+
+
 &:hover {
     opacity: 0.6;
 
   }`
   ;
 
-
-
 const BMu = styled.div`
 color: #fff;
 background-color: #D3D3D3;
 cursor: pointer;
 padding: 6px 22px;
+
+
+@media (max-width: 600px) {
+  padding: 2px;
+ 
+}
+
 
 
 &:hover {
@@ -188,11 +248,18 @@ cursor: pointer;
 padding: 6px 22px;
 
     
+
+@media (max-width: 600px) {
+  padding: 2px;
+ 
+}
+
+
+
 &:hover {
     opacity: 0.6;
 
   }`;
-
 
 
 const Corn = styled.div`
@@ -200,6 +267,13 @@ padding: 6px 22px;
 background-color: #FFEFD5;
 cursor: pointer;
 color: #800000;
+
+
+
+@media (max-width: 600px) {
+  padding: 2px;
+ 
+}
 
     
 &:hover {
@@ -215,6 +289,14 @@ background-color: #FFEFD5;
 cursor: pointer;
 color: #800000;
   
+
+
+@media (max-width: 600px) {
+  padding: 2px;
+ 
+}
+
+
 &:hover {
   opacity: 0.6;
 
@@ -227,6 +309,15 @@ padding: 6px 22px;
 background-color: #20B2AA;
 cursor: pointer;
 color: #FFDAB9;
+
+
+
+@media (max-width: 600px) {
+  padding: 2px;
+ 
+}
+
+
 
 &:hover {
   opacity: 0.6;
@@ -242,6 +333,14 @@ background-color: #B0E0E6;
 cursor: pointer;
 color: #fff;
 
+
+
+@media (max-width: 600px) {
+  padding: 2px;
+ 
+}
+
+
 &:hover {
   opacity: 0.6;
 
@@ -255,6 +354,12 @@ padding: 6px 22px;
 background-color: #B0E0E6;
 cursor: pointer;
 color: #fff;
+
+
+@media (max-width: 600px) {
+  padding: 2px;
+ 
+}
 
 
 &:hover {

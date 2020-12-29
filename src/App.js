@@ -20,7 +20,7 @@ function App()  {
   const [PickledDelete , setPickledDelete] = useState (0);
   const [Tomatoes, setTomatoesCount] = useState (0);
   const [TomatoesDelete , setTomatoesDelete] = useState(0);
-  const [buttonIsHide , setIsHide] = useState (false);
+  const [buttonHide , setIsHide] = useState (false);
 
    return(
      <Container> 
@@ -54,8 +54,9 @@ function App()  {
           RemoveCornCount={() => setCornDelete((CornDelete) => CornDelete -1)}
           RemovePickledCount={() => setPickledDelete((PickledDelete) => PickledDelete - 1)}
           RemoveTomatoesCount={() => setTomatoesDelete((TomatoesDelete) => TomatoesDelete -1)}
-          buttonIsHide={buttonIsHide}
-          IsHide={() => setIsHide((buttonIsHide) => buttonIsHide < 5 )}
+          buttonHide={buttonHide}
+          peperoniCount={peperoniCount}
+          IsHide={() => setIsHide((peperoniCount) => peperoniCount === 5 )}
           />
          <Toolbar/>
       <BuildControl/>

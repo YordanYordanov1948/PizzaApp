@@ -49,8 +49,9 @@ padding: 65px;
 box-sizing: border-box;
 
   @media (max-width: 600px) {
-    width: 40vh;
-    height 40vh;
+    width: 50vh;
+    height 50vh;
+    margin: 50px;
   }
 `;
 
@@ -71,8 +72,6 @@ display: flex;
 `;
 
 
-
-
 const Cheese = styled.div`
 height: 95%;
 width: 95%;
@@ -87,16 +86,33 @@ width: 75px;
 margin-left: 200px;
 height: 75px;
 background: firebrick;
-border-radius: 37.5px
+border-radius: 37.5px;
+
+@media (max-width: 600px) {
+  width: 30px;
+  margin-left: 110px;
+  height: 30px;
+  background: firebrick;
+ border-radius: 37.5px;
+}
 
 `;
 
 const Peperoni2 = styled.div`
 width: 75px;
-margin-left: 100px;
+margin-left: 120px;
 height: 75px;
 background: firebrick;
-border-radius: 37.5px
+border-radius: 37.5px;
+
+@media (max-width: 600px) {
+  width: 30px;
+  margin-left: 40px;
+  height: 30px;
+  background: firebrick;
+ border-radius: 37.5px;
+}
+
 `;
 
 const Peperoni3 = styled.div`
@@ -104,16 +120,32 @@ width: 75px;
 margin-left: 150px;
 height: 75px;
 background: firebrick;
-border-radius: 37.5px
-`;
+border-radius: 37.5px;
 
+@media (max-width: 600px) {
+  width: 30px;
+  margin-left: 130px;
+  height: 30px;
+  background: firebrick;
+  border-radius: 37.5px;
+}
+`;
 
 const Peperoni4 = styled.div`
 width: 75px;
 margin-left: 260px;
 height: 75px;
 background: firebrick;
-border-radius: 37.5px
+border-radius: 37.5px;
+
+@media (max-width: 600px) {
+  width: 30px;
+  margin-left: 90px;
+  height: 30px;
+  background: firebrick;
+  border-radius: 37.5px;
+}
+
 `;
 
 const Peperoni5 = styled.div`
@@ -121,7 +153,16 @@ width: 75px;
 margin-left: 130px;
 height: 75px;
 background: firebrick;
-border-radius: 37.5px
+border-radius: 37.5px;
+
+@media (max-width: 600px) {
+  width: 30px;
+  margin-left: 20px;
+  height: 30px;
+  background: firebrick;
+  border-radius: 37.5px;
+}
+
 `;
 
 
@@ -181,7 +222,21 @@ position: absolute;
 left: 55%;
 top: 85%;
 transform: rotateZ(120deg);
+
+
+@media (max-width: 600px) {
+width: 2%;
+height: 3%;
+left: 50%;
+top: 15%;
+border: 10px solid black;
+border-radius: 30px;
+transform: rotateZ(120deg);
+}
+
 `;
+
+
 
 const Olive1 = styled.div`
 width: 2%;
@@ -191,7 +246,18 @@ border-radius: 50px;
 position: absolute;
 left: 37%;
 top: 30%;
-transform: rotateZ(310deg)
+transform: rotateZ(310deg);
+
+@media (max-width: 600px) {
+width: 2%;
+height: 3%;
+left: 40%;
+top: 50%;
+border: 10px solid black;
+border-radius: 30px;
+transform: rotateZ(120deg);
+  }
+
 `;
 
 const Olive2 = styled.div`
@@ -202,7 +268,18 @@ border-radius: 50px;
 position: absolute;
 left: 85%;
 top: 30%;
-transform: rotateZ(260deg)
+transform: rotateZ(260deg);
+
+@media (max-width: 600px) {
+  width: 2%;
+  height: 3%;
+  left: 30%;
+  top: 10%;
+  border: 10px solid black;
+  border-radius: 30px;
+  transform: rotateZ(120deg);
+    }
+
 `;
 
 
