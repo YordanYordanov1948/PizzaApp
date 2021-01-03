@@ -9,8 +9,11 @@ const Option = (props) => {
 
 
   const handleIncrementPeperoniCount = () => {
-    props.incrementPeperoniCount()
-    props.Button()
+   props.incrementPeperoni()
+  }
+
+  const HandleDecrementPeperoni = () => {
+    props.decrementPeperoni();
   }
 
     return (
@@ -21,7 +24,7 @@ const Option = (props) => {
   Add Peperoni
 </ButtonP>
 
-<ButtonD onClick={() => props.RemovePeperoniCount()}> 
+<ButtonD onClick ={HandleDecrementPeperoni}>
   Delete Peperoni
 </ButtonD>
 

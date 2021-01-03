@@ -22,12 +22,17 @@ function App()  {
   const [TomatoesDelete , setTomatoesDelete] = useState(0);
  /* const [buttonHide , setIsHide] = useState(0); */
 
-const ButtonPeperoni = () => {
-const [peperoniCount , ButtonPeperoni] = useState(0);
-if(peperoniCount >= 5){
-  return ButtonPeperoni;
-}
-}
+ const incrementPeperoni = () => {
+  if (peperoniCount < 5) {
+  setPeperoniCount((peperoniCount) => peperoniCount + 1)
+  }
+  }
+
+  const decrementPeperoni = () => {
+    if (peperoniRemove < 5) {
+    setPeperoniRemove((peperoniRemove) => peperoniRemove - 1)
+    }
+    }
 
 
    return(
@@ -48,21 +53,22 @@ if(peperoniCount >= 5){
               TomatoesDelete={TomatoesDelete} />
               
     <Option
-        incrementPeperoniCount={() =>setPeperoniCount((peperoniCount) => peperoniCount + 1)}
+          incrementPeperoni={incrementPeperoni}
+          decrementPeperoni={decrementPeperoni}
+          peperoniCount={peperoniCount}
           incrementOrenadoCount={() => setOrenadoCount((Orenado) => Orenado + 1)}
           incrementOliveCount={() => setOliveCount((Olive) => Olive + 1)}
           incrementMuschroomsCount={() => setMuschroomsCount((Muschrooms) => Muschrooms + 1)}
           incrementCornCount={() => setCornCount((Corn) => Corn + 1)}
           incrementPickledCount={() => setPickledCount((Pickled) => Pickled + 1)}
           incrementTomatoesCount={() => setTomatoesCount((Tomatoes) => Tomatoes + 1)}
-          RemovePeperoniCount={() => setPeperoniRemove((peperoniRemove) => peperoniRemove -1)}
           RemoveOrenadoCount={() => setOrenadoRemove((OrenadoRemove) => OrenadoRemove -1)}
           RemoveOliveCount={() => setOliveRemove((OliveRemove) => OliveRemove -1)}
           RemoveMuschroomsCount={() =>setMuschroomsDelete((MuschroomsDelete) => MuschroomsDelete - 1)}
           RemoveCornCount={() => setCornDelete((CornDelete) => CornDelete -1)}
           RemovePickledCount={() => setPickledDelete((PickledDelete) => PickledDelete - 1)}
           RemoveTomatoesCount={() => setTomatoesDelete((TomatoesDelete) => TomatoesDelete -1)}
-          Button = {ButtonPeperoni}
+      
           />
          <Toolbar/>
       <BuildControl/>
