@@ -20,7 +20,15 @@ function App()  {
   const [PickledDelete , setPickledDelete] = useState (0);
   const [Tomatoes, setTomatoesCount] = useState (0);
   const [TomatoesDelete , setTomatoesDelete] = useState(0);
-  const [buttonHide , setIsHide] = useState (false);
+ /* const [buttonHide , setIsHide] = useState(0); */
+
+const ButtonPeperoni = () => {
+const [peperoniCount , ButtonPeperoni] = useState(0);
+if(peperoniCount >= 5){
+  return ButtonPeperoni;
+}
+}
+
 
    return(
      <Container> 
@@ -54,16 +62,14 @@ function App()  {
           RemoveCornCount={() => setCornDelete((CornDelete) => CornDelete -1)}
           RemovePickledCount={() => setPickledDelete((PickledDelete) => PickledDelete - 1)}
           RemoveTomatoesCount={() => setTomatoesDelete((TomatoesDelete) => TomatoesDelete -1)}
-          buttonHide={buttonHide}
-          peperoniCount={peperoniCount}
-          IsHide={() => setIsHide((peperoniCount) => peperoniCount === 5 )}
+          Button = {ButtonPeperoni}
           />
          <Toolbar/>
       <BuildControl/>
      </Container>
     
    );
-  }
+   }
 
 
 export default App;

@@ -10,7 +10,7 @@ const Option = (props) => {
 
   const handleIncrementPeperoniCount = () => {
     props.incrementPeperoniCount()
-    props.IsHide()
+    props.Button()
   }
 
     return (
