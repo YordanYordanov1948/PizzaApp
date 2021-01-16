@@ -121,6 +121,17 @@ transform: translateY(-50%);
   padding-bottom: 150px;
   flex-direction: column;
   }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+  display: flex;
+  width: 30%;
+  flex-wrap: wrap;
+  font-size: 11px;
+  justify-content: center;
+  padding-bottom: 170px;
+  flex-direction: column;
+  }
+  
 }`;
 
 

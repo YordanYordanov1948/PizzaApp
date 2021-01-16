@@ -14,5 +14,5 @@ const Layout = (props) => (
 export default Layout;
 
 const Main = styled.div`
-color: red;
-`
+color: #DC143C;
+`;

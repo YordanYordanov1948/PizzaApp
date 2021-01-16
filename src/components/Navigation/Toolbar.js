@@ -57,10 +57,6 @@ const [modalIsOpen , setModalIsOpen] = useState(false)
     Menu
   </AnchorM>
 
-  <AnchorM>
-    Contacts
-  </AnchorM>
-
   <ButtonM onClick= {() => setModalIsOpen(!modalIsOpen)}>
   Contacts
   </ButtonM>
@@ -115,7 +111,6 @@ const AnchorM = styled.div`
   text-decoration: none;
 }
 
-
 @media only screen and (min-width: 768px) {
   display: none;
 }
@@ -127,6 +122,7 @@ const AnchorM = styled.div`
 @media only screen and (min-width: 1200px) {
   display: none;
 }
+
 `;
 
 const ButtonM = styled.div`

@@ -52,6 +52,14 @@ color: #fff;
   position: fixed;
   bottom: 0;
   }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    color: #fff;
+    background: #FFD700;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
 }
 `;
 
