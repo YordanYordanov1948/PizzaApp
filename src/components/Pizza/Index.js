@@ -13,10 +13,6 @@ const Pica = (props) => {
       {props.peperoniCount >= 3 &&  props.peperoniRemove >= -3 && <Peperoni3/>}
       {props.peperoniCount >= 4 &&  props.peperoniRemove >= -4 && <Peperoni4/>}
       {props.peperoniCount >= 5 &&  props.peperoniRemove >= -5 && <Peperoni5/>}
-      {props.Orenado >= 1 && props.OrenadoRemove >= -1 && <Orenado1/>}
-      {props.Orenado >= 2 && props.OrenadoRemove >= -2 && <Orenado2/>}
-      {props.Orenado >= 3 && props.OrenadoRemove >= -3 && <Orenado3/>}
-      {props.Orenado >= 4 && props.OrenadoRemove >= -4 && <Orenado4/>}
       {props.Olive >= 1 && props.OliveRemove >= -1 && <Olive/>}
       {props.Olive >= 2 && props.OliveRemove >= -2 && <Olive1/>}
       {props.Olive >= 3 && props.OliveRemove >= -3 && <Olive2/>}
@@ -164,52 +160,6 @@ border-radius: 37.5px;
 
 `;
 
-
-const Orenado1 = styled.div`
-background: linear-gradient(green,#00d200);
-position: absolute;
-left: 70%;
-top: 45%;
-transform: rotateZ(235deg);
-width: 8%;
-height: 2%;
-border-radius: 10px;
-`;
-
-const Orenado2 = styled.div`
-background: linear-gradient(green,#00d200);
-position: absolute;
-left: 75%;
-top: 30%;
-transform: rotateZ(160deg);
-width: 8%;
-height: 2%;
-border-radius: 10px;
-`;
-
-
-const Orenado3 = styled.div`
-background: linear-gradient(green,#00d200);
-position: absolute;
-width: 8%;
-height: 2%;
-border-radius: 10px;
-left: 70%;
-top: 50%;
-transform: rotateZ(10deg);
-`;
-
-
-const Orenado4 = styled.div`
-background: linear-gradient(green,#00d200);
-position: absolute;
-width: 8%;
-height: 2%;
-border-radius: 10px;
-left: 45%;
-top: 50%;
-transform: rotateZ(30deg);
-`;
 
 
 const Olive = styled.div`

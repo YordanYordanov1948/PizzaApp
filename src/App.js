@@ -8,8 +8,6 @@ import styled from 'styled-components';
 function App()  { 
   const [peperoniCount , setPeperoniCount] =  useState(0);
   const [peperoniRemove , setPeperoniRemove] = useState(0);  
-  const [Orenado , setOrenadoCount] = useState(0);
-  const [OrenadoRemove , setOrenadoRemove] = useState(0);
   const [Olive , setOliveCount] = useState(0);
   const [OliveRemove, setOliveRemove] = useState (0);
   const [Muschrooms , setMuschroomsCount] = useState(0);
@@ -20,7 +18,6 @@ function App()  {
   const [PickledDelete , setPickledDelete] = useState (0);
   const [Tomatoes, setTomatoesCount] = useState (0);
   const [TomatoesDelete , setTomatoesDelete] = useState(0);
- /* const [buttonHide , setIsHide] = useState(0); */
 
  const incrementPeperoni = () => {
   if (peperoniCount < 5) {
@@ -34,13 +31,71 @@ function App()  {
     }
     }
 
+    const incrementOliveCount = () => {
+      if (Olive < 5) { 
+        setOliveCount((Olive) => Olive + 1)
+      }
+    }
+
+    const RemoveOliveCount = () => {
+      if (OliveRemove < 5) {
+        setOliveRemove((OliveRemove) => OliveRemove - 1)
+      }
+    }
+
+    const incrementMuschroomsCount = () => {
+      if (Muschrooms < 5) { 
+        setMuschroomsCount((Muschrooms) => Muschrooms + 1)
+      }
+    }
+
+    const RemoveMuschroomsCount = () => {
+      if (MuschroomsDelete < 5) {
+        setMuschroomsDelete((MuschroomsDelete) => MuschroomsDelete - 1)
+      }
+    }
+
+    const incrementCornCount = () => {
+      if (Corn < 5) { 
+        setCornCount((Corn) => Corn + 1) 
+      }
+    }
+
+    const RemoveCornCount = () => {
+      if (CornDelete < 5) {
+        setCornDelete((CornDelete) => CornDelete - 1)
+      }
+    }
+
+    const incrementPickledCount = () => {
+      if (Pickled < 5) {
+        setPickledCount((Pickled) => Pickled + 1)
+      }
+    }
+
+    const RemovePickledCount = () => {
+      if (PickledDelete < 5) {
+      setPickledDelete((PickledDelete) => PickledDelete - 1) 
+      }
+    }
+
+    const incrementTomatoesCount = () => {
+      if (Tomatoes < 5) { 
+        setTomatoesCount((Tomatoes) => Tomatoes + 1)
+      }
+    }
+
+    const RemoveTomatoesCount = () => {
+      if (TomatoesDelete < 5) {
+        setTomatoesDelete((TomatoesDelete) => TomatoesDelete - 1)
+      }
+    }
+
 
    return(
      <Container> 
        <Index peperoniCount={peperoniCount}
               peperoniRemove={peperoniRemove}
-              Orenado={Orenado}
-              OrenadoRemove={OrenadoRemove}
               Olive={Olive}
               OliveRemove={OliveRemove}
               Muschrooms={Muschrooms}
@@ -56,18 +111,16 @@ function App()  {
           incrementPeperoni={incrementPeperoni}
           decrementPeperoni={decrementPeperoni}
           peperoniCount={peperoniCount}
-          incrementOrenadoCount={() => setOrenadoCount((Orenado) => Orenado + 1)}
-          incrementOliveCount={() => setOliveCount((Olive) => Olive + 1)}
-          incrementMuschroomsCount={() => setMuschroomsCount((Muschrooms) => Muschrooms + 1)}
-          incrementCornCount={() => setCornCount((Corn) => Corn + 1)}
-          incrementPickledCount={() => setPickledCount((Pickled) => Pickled + 1)}
-          incrementTomatoesCount={() => setTomatoesCount((Tomatoes) => Tomatoes + 1)}
-          RemoveOrenadoCount={() => setOrenadoRemove((OrenadoRemove) => OrenadoRemove -1)}
-          RemoveOliveCount={() => setOliveRemove((OliveRemove) => OliveRemove -1)}
-          RemoveMuschroomsCount={() =>setMuschroomsDelete((MuschroomsDelete) => MuschroomsDelete - 1)}
-          RemoveCornCount={() => setCornDelete((CornDelete) => CornDelete -1)}
-          RemovePickledCount={() => setPickledDelete((PickledDelete) => PickledDelete - 1)}
-          RemoveTomatoesCount={() => setTomatoesDelete((TomatoesDelete) => TomatoesDelete -1)}
+          incrementOliveCount={incrementOliveCount}
+          incrementMuschroomsCount={incrementMuschroomsCount}
+          incrementCornCount={incrementCornCount}
+          incrementPickledCount={incrementPickledCount}
+          incrementTomatoesCount={incrementTomatoesCount}
+          RemoveOliveCount={RemoveOliveCount}
+          RemoveMuschroomsCount={RemoveMuschroomsCount}
+          RemoveCornCount={RemoveCornCount}
+          RemovePickledCount={RemovePickledCount}
+          RemoveTomatoesCount={RemoveTomatoesCount}
       
           />
          <Toolbar/>

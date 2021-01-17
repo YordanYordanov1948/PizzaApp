@@ -8,7 +8,7 @@ function shoot() {
 const Option = (props) => {
 
 
-  const handleIncrementPeperoniCount = () => {
+  const HandleIncrementPeperoniCount = () => {
    props.incrementPeperoni()
   }
 
@@ -16,64 +16,96 @@ const Option = (props) => {
     props.decrementPeperoni();
   }
 
+  const HandleOliveCount = () => {
+    props.incrementOliveCount();
+  }
+
+  const HandleOliveRemove = () => {
+    props.RemoveOliveCount();
+  }
+
+   const HandleMuschroomsCount = () => {
+    props.incrementMuschroomsCount();
+  }
+
+  const HandleMuschroomsDelete = () => {
+    props.RemoveMuschroomsCount();
+  }
+
+  const HandleCornCount = () => {
+    props.incrementCornCount();
+  }
+
+  const HandleCornRemove = () => {
+    props.RemoveCornCount();
+  }
+
+  const HandlePickledCount = () => {
+    props.incrementPickledCount();
+  }
+
+  const HandlePickledRemove = () => {
+    props.RemovePickledCount();
+  }
+
+  const HandleTomatoesCount = () => {
+    props.incrementTomatoesCount();
+  }
+  
+  const HandleTomatoesDelete = () => {
+    props.RemoveTomatoesCount();
+  }
+
     return (
 
 <Container>
 
-<ButtonP onClick= {handleIncrementPeperoniCount}>
+<ButtonP onClick={HandleIncrementPeperoniCount}>
   Add Peperoni
 </ButtonP>
 
-<ButtonD onClick ={HandleDecrementPeperoni}>
+<ButtonD onClick={HandleDecrementPeperoni}>
   Delete Peperoni
 </ButtonD>
 
-<ButtonO onClick={() => props.incrementOrenadoCount()}>
-Add Orenado 
-</ButtonO>
 
-<ButtonOD onClick={() => props.RemoveOrenadoCount()}>
-  Remove Orenado
-</ButtonOD>
-
-
-<ButtonOl onClick={() => props.incrementOliveCount()}>
+<ButtonOl onClick={HandleOliveCount}>
 Add Olive
 </ButtonOl>
 
-<ButtonOlD onClick={() => props.RemoveOliveCount()}>
+<ButtonOlD onClick={HandleOliveRemove}>
   Remove Olive
 </ButtonOlD>
 
-<BMu onClick={() => props.incrementMuschroomsCount()}>
+<BMu onClick={HandleMuschroomsCount}>
 Add Muschrooms 
 </BMu>
 
-<BMuD onClick={() => props.RemoveMuschroomsCount()}>
+<BMuD onClick={HandleMuschroomsDelete}>
   Remove Muschrooms
 </BMuD>
 
-<Corn onClick={() => props.incrementCornCount()}>
+<Corn onClick={HandleCornCount}>
     Add Corn
 </Corn>
 
-<CornDelete onClick={() => props.RemoveCornCount()}>
+<CornDelete onClick={HandleCornRemove}>
     Remove  Corn
 </CornDelete>
 
-<Pickled onClick={() => props.incrementPickledCount()}>
+<Pickled onClick={HandlePickledCount}>
   Add Pickled
 </Pickled>
 
-<Pickled onClick={() => props.RemovePickledCount()}>
+<Pickled onClick={HandlePickledRemove}>
   Remove Pickled
 </Pickled>
 
-<Tomatoes onClick={() => props.incrementTomatoesCount()}>
+<Tomatoes onClick={HandleTomatoesCount}>
   Add Tomatoes
 </Tomatoes>
 
-<Tomatoes onClick={() => props.RemoveTomatoesCount()}>
+<Tomatoes onClick={HandleTomatoesDelete}>
   Remove Tomatoes
 </Tomatoes>
 
@@ -172,39 +204,6 @@ padding: 6px 22px;
 }
 `;
 
-const ButtonO = styled.div`
-background-color: #ffffff;
-cursor: pointer;
-padding: 6px 22px;
-
-
-@media (max-width: 600px) {
-  padding: 2px;
- 
-}
-
-
-&:hover {
-    opacity: 0.6;
-  }`
-  ;
-
-const ButtonOD = styled.div`
-background-color: #ffffff;
-cursor: pointer;
-padding: 6px 22px;
-
-
-@media (max-width: 600px) {
-  padding: 2px;
- 
-}
-
-
-&:hover {
-    opacity: 0.6;
-  }
-`;
 
 
 const ButtonOl = styled.div`
