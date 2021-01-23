@@ -7,13 +7,12 @@ function shoot() {
 
 const Option = (props) => {
 
-
   const handleIncrementPeperoniCount = () => {
-   props.incrementPeperoni()
+   props.incrementPeperoniCount();
   }
 
   const handleDecrementPeperoni = () => {
-    props.decrementPeperoni();
+    props.decrementPeperoniCount();
   }
   
 
@@ -61,7 +60,7 @@ const Option = (props) => {
 
 <Container>
 
-<ButtonP onClick={handleIncrementPeperoniCount}>
+<ButtonP onClick={handleIncrementPeperoniCount}> 
   Add Peperoni
 </ButtonP>
 
@@ -75,7 +74,7 @@ Add Olive
 </ButtonOl>
 
 <ButtonOlD onClick={handleOliveRemove}>
-  Remove Olive
+Remove Olive
 </ButtonOlD>
 
 <BMu onClick={handleMuschroomsCount}>
@@ -83,35 +82,35 @@ Add Muschrooms
 </BMu>
 
 <BMuD onClick={handleMuschroomsRemove}>
-  Remove Muschrooms
+Remove Muschrooms
 </BMuD>
 
 <Corn onClick={handleCornCount}>
-    Add Corn
+Add Corn
 </Corn>
 
 <CornDelete onClick={handleCornRemove}>
-    Remove  Corn
+Remove  Corn
 </CornDelete>
 
 <Pickled onClick={handlePickledCount}>
-  Add Pickled
+Add Pickled
 </Pickled>
 
 <Pickled onClick={handlePickledRemove}>
-  Remove Pickled
+Remove Pickled
 </Pickled>
 
 <Tomatoes onClick={handleTomatoesCount}>
-  Add Tomatoes
+Add Tomatoes
 </Tomatoes>
 
 <Tomatoes onClick={handleTomatoesRemove}>
-  Remove Tomatoes
+Remove Tomatoes
 </Tomatoes>
 
 <Cancel onClick={shoot}>
-  Cancel an order! Click!
+Cancel an order! Click!
 </Cancel>
 
 </Container>
