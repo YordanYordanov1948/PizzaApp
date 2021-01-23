@@ -8,104 +8,105 @@ function shoot() {
 const Option = (props) => {
 
 
-  const HandleIncrementPeperoniCount = () => {
+  const handleIncrementPeperoniCount = () => {
    props.incrementPeperoni()
   }
 
-  const HandleDecrementPeperoni = () => {
+  const handleDecrementPeperoni = () => {
     props.decrementPeperoni();
   }
+  
 
-  const HandleOliveCount = () => {
+  const handleOliveCount = () => {
     props.incrementOliveCount();
   }
 
-  const HandleOliveRemove = () => {
-    props.RemoveOliveCount();
+  const handleOliveRemove = () => {
+    props.decrementOliveCount();
   }
 
-   const HandleMuschroomsCount = () => {
+   const handleMuschroomsCount = () => {
     props.incrementMuschroomsCount();
   }
 
-  const HandleMuschroomsDelete = () => {
-    props.RemoveMuschroomsCount();
+  const handleMuschroomsRemove = () => {
+    props.decrementMushroomCount();
   }
 
-  const HandleCornCount = () => {
+  const handleCornCount = () => {
     props.incrementCornCount();
   }
 
-  const HandleCornRemove = () => {
-    props.RemoveCornCount();
+  const handleCornRemove = () => {
+    props.decrementCornCount();
   }
 
-  const HandlePickledCount = () => {
+  const handlePickledCount = () => {
     props.incrementPickledCount();
   }
 
-  const HandlePickledRemove = () => {
-    props.RemovePickledCount();
+  const handlePickledRemove = () => {
+    props.decrementPickledCount();
   }
 
-  const HandleTomatoesCount = () => {
+  const handleTomatoesCount = () => {
     props.incrementTomatoesCount();
   }
   
-  const HandleTomatoesDelete = () => {
-    props.RemoveTomatoesCount();
+  const handleTomatoesRemove = () => {
+    props.decrementTomatoesCount();
   }
 
     return (
 
 <Container>
 
-<ButtonP onClick={HandleIncrementPeperoniCount}>
+<ButtonP onClick={handleIncrementPeperoniCount}>
   Add Peperoni
 </ButtonP>
 
-<ButtonD onClick={HandleDecrementPeperoni}>
+<ButtonD onClick={handleDecrementPeperoni}>
   Delete Peperoni
 </ButtonD>
 
 
-<ButtonOl onClick={HandleOliveCount}>
+<ButtonOl onClick={handleOliveCount}>
 Add Olive
 </ButtonOl>
 
-<ButtonOlD onClick={HandleOliveRemove}>
+<ButtonOlD onClick={handleOliveRemove}>
   Remove Olive
 </ButtonOlD>
 
-<BMu onClick={HandleMuschroomsCount}>
+<BMu onClick={handleMuschroomsCount}>
 Add Muschrooms 
 </BMu>
 
-<BMuD onClick={HandleMuschroomsDelete}>
+<BMuD onClick={handleMuschroomsRemove}>
   Remove Muschrooms
 </BMuD>
 
-<Corn onClick={HandleCornCount}>
+<Corn onClick={handleCornCount}>
     Add Corn
 </Corn>
 
-<CornDelete onClick={HandleCornRemove}>
+<CornDelete onClick={handleCornRemove}>
     Remove  Corn
 </CornDelete>
 
-<Pickled onClick={HandlePickledCount}>
+<Pickled onClick={handlePickledCount}>
   Add Pickled
 </Pickled>
 
-<Pickled onClick={HandlePickledRemove}>
+<Pickled onClick={handlePickledRemove}>
   Remove Pickled
 </Pickled>
 
-<Tomatoes onClick={HandleTomatoesCount}>
+<Tomatoes onClick={handleTomatoesCount}>
   Add Tomatoes
 </Tomatoes>
 
-<Tomatoes onClick={HandleTomatoesDelete}>
+<Tomatoes onClick={handleTomatoesRemove}>
   Remove Tomatoes
 </Tomatoes>
 
