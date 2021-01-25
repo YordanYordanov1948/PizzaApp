@@ -100,6 +100,11 @@ function App()  {
               
     <Option
           peperoniCount={peperoniCount}
+          oliveCount={oliveCount}
+          mushroomCount={mushroomCount}
+          cornCount={cornCount}
+          pickledCount={pickledCount}
+          tomatoesCount={tomatoesCount}
           incrementPeperoniCount={() =>incrementPeperoniCount(peperoniCount, setPeperoniCount((peperoniCount) => peperoniCount + 1))}
           decrementPeperoniCount={() =>decrementPeperoniCount(peperoniCount, setPeperoniCount((peperoniCount) => peperoniCount - 1))}
           incrementOliveCount={() =>incrementOliveCount(oliveCount, setOliveCount((oliveCount) => oliveCount + 1))}

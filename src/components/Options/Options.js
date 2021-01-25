@@ -7,6 +7,7 @@ function shoot() {
 
 const Option = (props) => {
 
+
   const handleIncrementPeperoniCount = () => {
    props.incrementPeperoniCount();
   }
@@ -56,54 +57,75 @@ const Option = (props) => {
     props.decrementTomatoesCount();
   }
 
-    return (
+ const buttonHide = props.peperoniCount;
+ const OliveButton = props.oliveCount;
+ const mushroomCountButton = props.mushroomCount;
+ const cornCountButton = props.cornCount;
+ const pickledCountButton = props.pickledCount;
+ const tomatoesCountButton = props.tomatoesCount;
 
+    return (
 <Container>
 
+{buttonHide === 5 ||
 <ButtonP onClick={handleIncrementPeperoniCount}> 
-  Add Peperoni
-</ButtonP>
+Add Peperoni
+</ButtonP> 
+}
+
 
 <ButtonD onClick={handleDecrementPeperoni}>
-  Delete Peperoni
+Delete Peperoni
 </ButtonD>
 
 
+{OliveButton === 3 ||
 <ButtonOl onClick={handleOliveCount}>
 Add Olive
 </ButtonOl>
+}
+
 
 <ButtonOlD onClick={handleOliveRemove}>
 Remove Olive
 </ButtonOlD>
 
+{mushroomCountButton === 4 || 
 <BMu onClick={handleMuschroomsCount}>
 Add Muschrooms 
 </BMu>
+}
+
 
 <BMuD onClick={handleMuschroomsRemove}>
 Remove Muschrooms
 </BMuD>
 
+{cornCountButton === 4 || 
 <Corn onClick={handleCornCount}>
 Add Corn
 </Corn>
+}
 
 <CornDelete onClick={handleCornRemove}>
 Remove  Corn
 </CornDelete>
 
+{pickledCountButton === 1 || 
 <Pickled onClick={handlePickledCount}>
 Add Pickled
 </Pickled>
+}
 
 <Pickled onClick={handlePickledRemove}>
 Remove Pickled
 </Pickled>
 
+{tomatoesCountButton === 2  || 
 <Tomatoes onClick={handleTomatoesCount}>
 Add Tomatoes
 </Tomatoes>
+}
 
 <Tomatoes onClick={handleTomatoesRemove}>
 Remove Tomatoes
