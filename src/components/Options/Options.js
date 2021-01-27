@@ -9,61 +9,61 @@ const Option = (props) => {
 
 
   const handleIncrementPeperoniCount = () => {
-   props.incrementPeperoniCount();
+   props.incrementPeperoni();
   }
 
   const handleDecrementPeperoni = () => {
-    props.decrementPeperoniCount();
+    props.decrementPeperoni();
   }
   
 
   const handleOliveCount = () => {
-    props.incrementOliveCount();
+    props.incrementOlive();
   }
 
   const handleOliveRemove = () => {
-    props.decrementOliveCount();
+    props.decrementOlive();
   }
 
    const handleMuschroomsCount = () => {
-    props.incrementMuschroomsCount();
+    props.incrementMuschrooms();
   }
 
   const handleMuschroomsRemove = () => {
-    props.decrementMushroomCount();
+    props.decrementMushrooms();
   }
 
   const handleCornCount = () => {
-    props.incrementCornCount();
+    props.incrementCorn();
   }
 
   const handleCornRemove = () => {
-    props.decrementCornCount();
+    props.decrementCorn();
   }
 
   const handlePickledCount = () => {
-    props.incrementPickledCount();
+    props.incrementPickled();
   }
 
   const handlePickledRemove = () => {
-    props.decrementPickledCount();
+    props.decrementPickled();
   }
 
   const handleTomatoesCount = () => {
-    props.incrementTomatoesCount();
+    props.incrementTomatoes();
   }
   
   const handleTomatoesRemove = () => {
-    props.decrementTomatoesCount();
+    props.decrementTomatoes();
   }
 
   
   const handleCheeseCount = () => {
-    props.incrementCheeseCount();
+    props.incrementCheese();
   }
 
   const handleCheeseRemove = () => {
-    props.decrementCheeseCount();
+    props.decrementCheese();
   }
   
 

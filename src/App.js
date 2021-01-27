@@ -14,91 +14,61 @@ function App()  {
   const [tomatoesCount , setTomatoesCount] = useState (0);
   const [cheeseCount , setCheeseCount] = useState (0);
 
- const incrementPeperoniCount = () => {
-  if (peperoniCount < 5) {
-  setPeperoniCount((peperoniCount) => peperoniCount)
-    } 
+
+  const incrementPeperoni  = (key, value, callback) => {
+    if (key <= value) callback();
   }
 
-  const decrementPeperoniCount = () => {
-    if (peperoniCount <= 5) {
-    setPeperoniCount((peperoniCount) => peperoniCount)
-    } 
-    }
-  
-    
-     const incrementOliveCount = () => {
-      if (oliveCount < 5) { 
-        setOliveCount((oliveCount) => oliveCount)
-      }
-    }
+  const decrementPeperoni = (key , value , callback) => {
+    if (key <= value) callback();
+  }
 
+  const incrementOlive = (key , value , callback) => {
+    if(key <= value) callback();
+  }
+  const decrementOlive = (key , value , callback) => {
+    if(key <= value) callback();
+  }
 
-    const decrementOliveCount = () => {
-     if (oliveCount <= 5) {
-        setOliveCount((oliveCount) => oliveCount)
-      }
-    }
+  const incrementMuschrooms = (key , value , callback) => {
+    if(key <= value) callback();
+  }
 
-    const incrementMuschroomsCount = () => {
-      if (mushroomCount < 5) { 
-        setMuschroomsCount((mushroomCount) => mushroomCount)
-      }
-    }
+  const decrementMushrooms = (key , value , callback) => {
+    if(key <= value) callback();
+  }
 
-    const decrementMushroomCount = () => {
-      if (mushroomCount <= 5) {
-        setMuschroomsCount((mushroomCount) => mushroomCount)
-      }
-    }
+  const incrementCorn = (key , value , callback) => {
+    if(key <= value) callback();
+  }
 
-    const incrementCornCount = () => {
-      if (cornCount < 5) { 
-        setCornCount((cornCount) => cornCount) 
-      }
-    }
+  const decrementCorn = (key , value , callback) => {
+    if(key <= value) callback();
+  }
 
-    const decrementCornCount = () => {
-      if (cornCount <= 5) {
-        setCornCount((cornCount) => cornCount)
-      }
-    }
+  const incrementPickled = (key , value , callback) => {
+    if(key <= value) callback();
+  }
 
-    const incrementPickledCount = () => {
-      if (pickledCount < 5) {
-        setPickledCount((pickledCount) => pickledCount)
-      }
-    }
+  const decrementPickled = (key , value , callback) => {
+    if(key <= value) callback();
+  }
 
-    const decrementPickledCount = () => {
-      if (pickledCount <= 5) {
-      setPickledCount((pickledCount) => pickledCount) 
-      }
-    }
+  const incrementTomatoes = (key , value , callback) => {
+    if(key <= value) callback();
+  }
 
-    const incrementTomatoesCount = () => {
-      if (tomatoesCount < 5) { 
-        setTomatoesCount((tomatoesCount) => tomatoesCount)
-      }
-    }
+  const decrementTomatoes = (key , value , callback) => {
+    if(key <= value) callback();
+  }
 
-    const decrementTomatoesCount = () => {
-      if (tomatoesCount <= 5) {
-        setTomatoesCount((tomatoesCount) => tomatoesCount)
-      }
-    }
+  const incrementCheese = (key , value , callback) => {
+    if(key <= value) callback();
+  }
 
-    const incrementCheeseCount = () => {
-      if (cheeseCount < 4) {
-        setCheeseCount((cheeseCount) => cheeseCount)
-      }
-    }
-    
-    const decrementCheeseCount = () => {
-      if (cheeseCount <= 4) {
-        setCheeseCount((cheeseCount) => cheeseCount)
-      }
-    }
+  const decrementCheese = (key , value , callback) => {
+    if(key <= value) callback();
+  }
 
     
    return(
@@ -120,20 +90,20 @@ function App()  {
           pickledCount={pickledCount}
           tomatoesCount={tomatoesCount}
           cheeseCount={cheeseCount}
-          incrementPeperoniCount={() =>incrementPeperoniCount(peperoniCount, setPeperoniCount((peperoniCount) => peperoniCount + 1))}
-          decrementPeperoniCount={() =>decrementPeperoniCount(peperoniCount, setPeperoniCount((peperoniCount) => peperoniCount - 1))}
-          incrementOliveCount={() =>incrementOliveCount(oliveCount, setOliveCount((oliveCount) => oliveCount + 1))}
-          decrementOliveCount={() => decrementOliveCount(oliveCount,setOliveCount((oliveCount) => oliveCount - 1 ))}
-          incrementMuschroomsCount={() =>incrementMuschroomsCount(mushroomCount, setMuschroomsCount((mushroomCount) => mushroomCount + 1))}
-          decrementMushroomCount={() =>decrementMushroomCount(mushroomCount, setMuschroomsCount((mushroomCount) => mushroomCount - 1))}
-          incrementCornCount={() =>incrementCornCount(cornCount, setCornCount((cornCount) => cornCount + 1))}
-          decrementCornCount={() =>decrementCornCount(cornCount, setCornCount((cornCount) => cornCount - 1))}
-          incrementPickledCount={() =>incrementPickledCount(pickledCount, setPickledCount((pickledCount) => pickledCount + 1))}
-          decrementPickledCount={() =>decrementPickledCount(pickledCount, setPickledCount((pickledCount) => pickledCount - 1))}
-          incrementTomatoesCount={() =>incrementTomatoesCount(tomatoesCount, setTomatoesCount((tomatoesCount) => tomatoesCount + 1))}
-          decrementTomatoesCount={() =>decrementTomatoesCount(tomatoesCount, setTomatoesCount((tomatoesCount) => tomatoesCount - 1))}
-          incrementCheeseCount={() => incrementCheeseCount(cheeseCount , setCheeseCount((cheeseCount) => cheeseCount + 1))}
-          decrementCheeseCount={() => decrementCheeseCount(cheeseCount , setCheeseCount((cheeseCount) => cheeseCount - 1))}  
+          incrementPeperoni={() => incrementPeperoni(peperoniCount, 5, () => setPeperoniCount((peperoniCount) => peperoniCount +1))}
+          decrementPeperoni={() => decrementPeperoni(peperoniCount, 5, () => setPeperoniCount((peperoniCount) => peperoniCount -1))}
+          incrementOlive={() => incrementOlive(oliveCount, 5, () => setOliveCount((oliveCount) => oliveCount +1))}
+          decrementOlive={() => decrementOlive(oliveCount, 5, () => setOliveCount((oliveCount) => oliveCount -1))} 
+          incrementMuschrooms={() =>incrementMuschrooms(mushroomCount, setMuschroomsCount((mushroomCount) => mushroomCount + 1))}
+          decrementMushrooms={() =>decrementMushrooms(mushroomCount, setMuschroomsCount((mushroomCount) => mushroomCount - 1))}
+          incrementCorn={() =>incrementCorn(cornCount, setCornCount((cornCount) => cornCount + 1))}
+          decrementCorn={() =>decrementCorn(cornCount, setCornCount((cornCount) => cornCount - 1))}
+          incrementPickled={() =>incrementPickled(pickledCount, setPickledCount((pickledCount) => pickledCount + 1))}
+          decrementPickled={() =>decrementPickled(pickledCount, setPickledCount((pickledCount) => pickledCount - 1))}
+          incrementTomatoes={() =>incrementTomatoes(tomatoesCount, setTomatoesCount((tomatoesCount) => tomatoesCount + 1))}
+          decrementTomatoes={() =>decrementTomatoes(tomatoesCount, setTomatoesCount((tomatoesCount) => tomatoesCount - 1))}
+          incrementCheese={() => incrementCheese(cheeseCount , setCheeseCount((cheeseCount) => cheeseCount + 1))}
+          decrementCheese={() => decrementCheese(cheeseCount , setCheeseCount((cheeseCount) => cheeseCount - 1))}  
           />
          <Toolbar/>
       <BuildControl/>
