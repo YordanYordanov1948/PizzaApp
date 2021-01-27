@@ -57,12 +57,24 @@ const Option = (props) => {
     props.decrementTomatoesCount();
   }
 
+  
+  const handleCheeseCount = () => {
+    props.incrementCheeseCount();
+  }
+
+  const handleCheeseRemove = () => {
+    props.decrementCheeseCount();
+  }
+  
+
  const buttonHide = props.peperoniCount;
- const OliveButton = props.oliveCount;
+ const oliveButton = props.oliveCount;
  const mushroomCountButton = props.mushroomCount;
  const cornCountButton = props.cornCount;
  const pickledCountButton = props.pickledCount;
  const tomatoesCountButton = props.tomatoesCount;
+ const cheeseCountButton = props.cheeseCount;
+
 
     return (
 <Container>
@@ -79,12 +91,11 @@ Delete Peperoni
 </ButtonD>
 
 
-{OliveButton === 3 ||
+{oliveButton === 3 ||
 <ButtonOl onClick={handleOliveCount}>
 Add Olive
 </ButtonOl>
 }
-
 
 <ButtonOlD onClick={handleOliveRemove}>
 Remove Olive
@@ -95,7 +106,6 @@ Remove Olive
 Add Muschrooms 
 </BMu>
 }
-
 
 <BMuD onClick={handleMuschroomsRemove}>
 Remove Muschrooms
@@ -130,6 +140,17 @@ Add Tomatoes
 <Tomatoes onClick={handleTomatoesRemove}>
 Remove Tomatoes
 </Tomatoes>
+
+{cheeseCountButton === 4 || 
+<Cheese onClick={handleCheeseCount}>
+Add Cheese 
+</Cheese>
+}
+
+<CheeseDelete onClick={handleCheeseRemove}>
+Remove Cheese
+</CheeseDelete>
+
 
 <Cancel onClick={shoot}>
 Cancel an order! Click!
@@ -411,5 +432,42 @@ color: #fff;
 &:hover {
   opacity: 0.6;
 
+}
+`;
+
+
+const Cheese = styled.div`
+color: #000;
+background-color: #FFEBCD;
+cursor: pointer;
+padding: 6px 22px;
+
+
+@media (max-width: 600px) {
+  padding: 2px;
+ 
+}
+
+
+&:hover {
+  opacity: 0.6;
+}
+`;
+
+const CheeseDelete = styled.div`
+color: #000;
+background-color: #FFEBCD;
+cursor: pointer;
+padding: 6px 22px;
+
+
+@media (max-width: 600px) {
+  padding: 2px;
+ 
+}
+
+
+&:hover {
+  opacity: 0.6;
 }
 `;

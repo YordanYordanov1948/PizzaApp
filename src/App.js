@@ -12,6 +12,7 @@ function App()  {
   const [cornCount , setCornCount] = useState (0);
   const [pickledCount , setPickledCount] = useState (0);
   const [tomatoesCount , setTomatoesCount] = useState (0);
+  const [cheeseCount , setCheeseCount] = useState (0);
 
  const incrementPeperoniCount = () => {
   if (peperoniCount < 5) {
@@ -87,6 +88,18 @@ function App()  {
       }
     }
 
+    const incrementCheeseCount = () => {
+      if (cheeseCount < 4) {
+        setCheeseCount((cheeseCount) => cheeseCount)
+      }
+    }
+    
+    const decrementCheeseCount = () => {
+      if (cheeseCount <= 4) {
+        setCheeseCount((cheeseCount) => cheeseCount)
+      }
+    }
+
     
    return(
      <Container> 
@@ -96,6 +109,7 @@ function App()  {
               cornCount={cornCount}
               pickledCount={pickledCount}
               tomatoesCount={tomatoesCount}
+              cheeseCount={cheeseCount}
               />
               
     <Option
@@ -105,6 +119,7 @@ function App()  {
           cornCount={cornCount}
           pickledCount={pickledCount}
           tomatoesCount={tomatoesCount}
+          cheeseCount={cheeseCount}
           incrementPeperoniCount={() =>incrementPeperoniCount(peperoniCount, setPeperoniCount((peperoniCount) => peperoniCount + 1))}
           decrementPeperoniCount={() =>decrementPeperoniCount(peperoniCount, setPeperoniCount((peperoniCount) => peperoniCount - 1))}
           incrementOliveCount={() =>incrementOliveCount(oliveCount, setOliveCount((oliveCount) => oliveCount + 1))}
@@ -117,6 +132,8 @@ function App()  {
           decrementPickledCount={() =>decrementPickledCount(pickledCount, setPickledCount((pickledCount) => pickledCount - 1))}
           incrementTomatoesCount={() =>incrementTomatoesCount(tomatoesCount, setTomatoesCount((tomatoesCount) => tomatoesCount + 1))}
           decrementTomatoesCount={() =>decrementTomatoesCount(tomatoesCount, setTomatoesCount((tomatoesCount) => tomatoesCount - 1))}
+          incrementCheeseCount={() => incrementCheeseCount(cheeseCount , setCheeseCount((cheeseCount) => cheeseCount + 1))}
+          decrementCheeseCount={() => decrementCheeseCount(cheeseCount , setCheeseCount((cheeseCount) => cheeseCount - 1))}  
           />
          <Toolbar/>
       <BuildControl/>

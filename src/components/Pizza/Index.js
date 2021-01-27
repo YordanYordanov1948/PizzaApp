@@ -27,6 +27,10 @@ const Pica = (props) => {
       {props.pickledCount >= 1 && props.pickledCount >= - 1 && <Pickled1/>}
       {props.tomatoesCount >= 1 && props.tomatoesCount >= -1 && <Tomatoes/>}
       {props.tomatoesCount >= 2 && props.tomatoesCount >= - 2 && <Tomatoes1/>}
+      {props.cheeseCount >= 1 && props.cheeseCount >= - 1 && <Cheesse/>}
+      {props.cheeseCount >= 2 && props.cheeseCount >= - 2 && <Cheesse1/>}
+      {props.cheeseCount >= 3 && props.cheeseCount >= - 3 && <Cheesse2/>}
+      {props.cheeseCount >= 4 && props.cheeseCount >= - 4 && <Cheesse3/>}
      </Cheese>
    </Crust>
  </Pizza>
@@ -358,3 +362,95 @@ top: 50%;
 transform: rotateZ(300deg)
 `;
 
+const Cheesse = styled.div`
+position: absolute;
+top: 90px;
+left: 120px;
+height: 100px;
+width: 100px;
+background-color: rgb(251, 190, 0);
+border-radius: 10%;
+z-index: 2;
+border: 1px solid orange;
+
+
+@media (max-width: 600px) {
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(251, 190, 0);
+  border-radius: 10%;
+  z-index: 2;
+  border: 1px solid orange;
+`;
+
+const Cheesse1 = styled.div`
+position: absolute;
+top: 230px;
+left: 220px;
+height: 100px;
+width: 100px;
+background-color: rgb(251, 190, 0);
+border-radius: 10%;
+z-index: 2;
+border: 1px solid orange;
+
+@media (max-width: 600px) {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(251, 190, 0);
+  border-radius: 10%;
+  z-index: 2;
+  border: 1px solid orange;
+`;
+
+const Cheesse2 = styled.div`
+position: absolute;
+top: 100px;
+left: 230px;
+height: 100px;
+width: 100px;
+background-color: rgb(251, 190, 0);
+border-radius: 10%;
+z-index: 2;
+border: 1px solid orange;
+
+@media (max-width: 600px) {
+  position: absolute;
+  top: 40px;
+  left: 90px;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(251, 190, 0);
+  border-radius: 10%;
+  z-index: 2;
+  border: 1px solid orange;
+`;
+
+const Cheesse3 = styled.div`
+position: absolute;
+top: 190px;
+left: 30px;
+height: 100px;
+width: 100px;
+background-color: rgb(251, 190, 0);
+border-radius: 10%;
+z-index: 2;
+border: 1px solid orange;
+
+@media (max-width: 600px) {
+  position: absolute;
+  top: 80px;
+  left: 90px;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(251, 190, 0);
+  border-radius: 10%;
+  z-index: 2;
+  border: 1px solid orange;
+`;
