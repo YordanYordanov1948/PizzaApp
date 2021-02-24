@@ -1,1 +1,6 @@
-This is my first React App. 
+# How to start my first React App 
+
+### `First npm install`
+
+### `Second npm start`
+
