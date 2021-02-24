@@ -1,18 +1,15 @@
-import React from 'react';
-import styled from 'styled-components'
-import AuxReact from './Hoc/AuxReact';
-
+import React from "react";
+import styled from "styled-components";
+import AuxReact from "./Hoc/AuxReact";
 
 const Layout = (props) => (
-    <AuxReact>
-<Main>
-    {props.children}
-</Main>
-</AuxReact>
+  <AuxReact>
+    <Main>{props.children}</Main>
+  </AuxReact>
 );
 
 export default Layout;
 
 const Main = styled.div`
-color: #DC143C;
+  color: #dc143c;
 `;
